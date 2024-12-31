@@ -1,19 +1,19 @@
-import { ThemeProvider } from "app/providers/ThemeProvider";
-import { render } from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import App from "./app/App";
-import "./shared/config/i18n/i18n";
-import { testFunction } from "./test";
-testFunction(123)
+import { ThemeProvider } from 'app/providers/ThemeProvider';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './app/App';
+import './shared/config/i18n/i18n';
+import { testFunction } from './test';
 
-const root = document.getElementById('root')
+testFunction(123);
+
+const root = document.getElementById('root');
 
 render(
-  <>
     <BrowserRouter>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </BrowserRouter>
-  </>,
-root)
+        <ThemeProvider>
+            <App />
+        </ThemeProvider>
+    </BrowserRouter>,
+    root,
+);
