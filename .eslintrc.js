@@ -26,7 +26,10 @@ module.exports = {
         'react/jsx-indent': [2, 4], // отступы
         'react/jsx-indent-props': [2, 4], // отступы для пропсов в JSX
         indent: [2, 4],
-        'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }], // в каких файлах разрешен jsx
+        'react/jsx-filename-extension': [
+            2,
+            { extensions: ['.js', '.jsx', '.tsx'] },
+        ], // в каких файлах разрешен jsx
         'import/no-unresolved': 'off', // разрешение на абсолютный импорт
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'warn', // предупреждение, а не ошибка для неиспользуемых переменных
@@ -39,6 +42,7 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'max-len': ['error', { ignoreComments: true }],
     },
     globals: {
         __IS_DEV__: true,
