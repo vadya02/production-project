@@ -43,6 +43,8 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', { markupOnly: true }],
         'max-len': ['error', { ignoreComments: true }],
+        'linebreak-style': ['error', 'windows'],
+        'max-len': 120,
     },
     globals: {
         __IS_DEV__: true,
