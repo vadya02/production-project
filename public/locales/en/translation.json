@@ -3,5 +3,7 @@
   "Текст на русском": "Russian text",
   "О нас": "About us",
   "Язык": "English",
-  "Страница не найдена": "Page not found"
+  "Страница не найдена": "Page not found",
+  "PageError": "Ошибка",
+  "throw error": "вызвать ошибку"
 }

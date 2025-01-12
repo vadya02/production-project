@@ -1,3 +1,4 @@
+import { BugButton } from 'app/providers/ErrorBoundary/ui/BugButton';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import cls from './Navbar.module.scss';
@@ -16,6 +17,7 @@ export default function Navbar({ className }: NavbarProps) {
                 <AppLink theme={AppLinkTheme.SECONDARY} to="/about">
                     About
                 </AppLink>
+                <BugButton/>
             </div>
         </div>
     );
