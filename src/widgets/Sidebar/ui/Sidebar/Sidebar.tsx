@@ -9,7 +9,7 @@ interface SidebarProps {
   className?: string;
 }
 
-function Sidebar({ className }: SidebarProps) {
+export const Sidebar =({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
     const onToggle = () => {
         setCollapsed((prev) => !prev);
@@ -28,4 +28,4 @@ function Sidebar({ className }: SidebarProps) {
     );
 }
 
-export default Sidebar;
+ Sidebar;

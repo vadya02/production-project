@@ -1,10 +1,10 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
 
+import { AppRouter } from 'app/providers/router';
+import { useTheme } from 'app/providers/ThemeProvider';
 import { Suspense } from 'react';
 import { Sidebar } from 'widgets/Sidebar';
-import { useTheme } from './providers/ThemeProvider';
-import { AppRouter } from './providers/router';
 import './styles/index.scss';
 
 const App = () => {
