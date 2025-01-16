@@ -1,0 +1,1 @@
+npm uninstall @storybook/testing-library @storybook/react @storybook/manager-webpack5 @storybook/builder-webpack5 @storybook/addon-links @storybook/addon-interactions @storybook/addon-essentials @storybook/addon-actions
