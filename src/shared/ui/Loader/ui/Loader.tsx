@@ -6,7 +6,20 @@ interface LoaderProps {
 const Loader = (props: LoaderProps) => {
     const { className } = props;
     return (
-      <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div className="lds-spinner">
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+        </div>
     );
 };
 
