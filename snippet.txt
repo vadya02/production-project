@@ -1,0 +1,13 @@
+interface ModalProps {
+  className?: string;
+}
+
+export const Modal = (props: ModalProps) => {
+  const {
+    classname,
+  } = props;
+
+  return (
+    <div className={classNames(cls.Modal, {}, [className])}></div>
+  )
+}
