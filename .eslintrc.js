@@ -45,6 +45,7 @@ module.exports = {
         }],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
+        'no-param-reassign': 'off', // отключаем для того, чтобы корректно обрабатывалось изменение свойства объекта напрямую в редьюсере redux-toolkit
     },
     globals: {
         __IS_DEV__: true,

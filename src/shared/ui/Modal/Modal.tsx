@@ -25,7 +25,7 @@ export const Modal = (props: ModalProps) => {
     } = props;
 
     const [isClosing, setIsClosing] = useState(false);
-    const timeRef = useRef<ReturnType<typeof setTimeout>>();
+    const timerRef = useRef<ReturnType<typeof setTimeout>>();
     const { theme } = useTheme();
 
     const mods: Record<string, boolean> = {
@@ -37,14 +37,12 @@ export const Modal = (props: ModalProps) => {
     const closeHandler = useCallback(() => {
         if (onClose) {
             setIsClosing(true);
-            timeRef.current = setTimeout(() => {
+            timerRef.current = setTimeout(() => {
                 onClose();
                 setIsClosing(false);
             }, ANIMATION_DELAY);
-            onClose();
         }
     }, [onClose]);
-
     const onKeyDown = useCallback((e: KeyboardEvent) => {
         if (e.key === 'Escape') {
             closeHandler();
@@ -57,10 +55,13 @@ export const Modal = (props: ModalProps) => {
 
     useEffect(() => {
         if (isOpen) {
+            // @ts-ignore
             window.addEventListener('keydown', onKeyDown);
         }
+
         return () => {
-            clearTimeout(timeRef.current);
+            clearTimeout(timerRef.current);
+            // @ts-ignore
             window.removeEventListener('keydown', onKeyDown);
         };
     }, [isOpen, onKeyDown]);
