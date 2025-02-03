@@ -4,17 +4,15 @@ import { Button } from 'shared/ui/Button/Button';
 import { getCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
 import { counterActions } from '../model/slice/counterSlice';
 
-interface CounterProps {
-  className?: string;
-}
-
-export const Counter = (props: CounterProps) => {
+export const Counter = () => {
     const dispatch = useDispatch();
     const counterValue = useSelector(getCounterValue);
+    const { t } = useTranslation();
+
     const increment = () => {
         dispatch(counterActions.increment());
     };
-    const { t } = useTranslation();
+
     const decrement = () => {
         dispatch(counterActions.decrement());
     };
