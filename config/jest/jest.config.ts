@@ -44,7 +44,7 @@ export default {
 
     globals: {
         __IS_DEV__: true,
-    }
+    },
 
     // Indicates which provider should be used to instrument code for coverage
     // coverageProvider: "babel",
