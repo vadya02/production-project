@@ -3,13 +3,20 @@ import { Navbar } from 'widgets/Navbar';
 
 import { AppRouter } from 'app/providers/router';
 import { useTheme } from 'app/providers/ThemeProvider';
-import { Suspense } from 'react';
+import { userActions } from 'entities/User';
+import { Suspense, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Sidebar } from 'widgets/Sidebar';
 
 const App = () => {
     const { theme } = useTheme();
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(userActions.initAuthData());
+    }, [dispatch]);
     return (
-        <div className={classNames('app', {}, [theme])}>
+        <div className={classNames('app', {}, [])}>
             <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
