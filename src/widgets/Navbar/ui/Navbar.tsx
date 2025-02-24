@@ -1,5 +1,5 @@
 import { BugButton } from 'app/providers/ErrorBoundary/ui/BugButton';
-import { getUserAuthData, userActions } from 'entities/User';
+import { getUserAuthData, userActions } from 'entity/User';
 import { LoginModal } from 'features/AuthByUsername';
 import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -54,7 +54,7 @@ export default function Navbar({ className }: NavbarProps) {
             >
                 {t('Войти')}
             </Button>
-            <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+            {isAuthModal && (<LoginModal isOpen={isAuthModal} onClose={onCloseModal} />)}
             <div className={cls.links}>
                 <AppLink theme={AppLinkTheme.SECONDARY} to="/" className={cls.mainLink}>
                     {t('Главная')}

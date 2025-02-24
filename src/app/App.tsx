@@ -3,7 +3,7 @@ import { Navbar } from 'widgets/Navbar';
 
 import { AppRouter } from 'app/providers/router';
 import { useTheme } from 'app/providers/ThemeProvider';
-import { userActions } from 'entities/User';
+import { userActions } from 'entity/User';
 import { Suspense, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Sidebar } from 'widgets/Sidebar';
