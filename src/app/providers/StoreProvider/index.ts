@@ -1,8 +1,9 @@
 import { StateSchema } from './config/StateSchema';
-import { createReduxStore } from './config/store';
+import { AppDispatch, createReduxStore } from './config/store';
 import { StoreProvider } from './ui/StoreProvider';
 
 export {
+  AppDispatch,
   // eslint-disable-next-line indent
   createReduxStore, StateSchema, StoreProvider
 };
