@@ -1,5 +1,14 @@
+import { fetchProfileData } from "./model/services/fetchProfileData";
 import { profileActions, profileReducer } from "./model/slices/profileSlice";
 import { Profile, ProfileSchema } from "./model/types/profile";
+import { ProfileCard } from "./ui/ProfileCard";
 
-export { Profile, profileActions, profileReducer, ProfileSchema };
+export {
+  fetchProfileData,
+  Profile,
+  profileActions,
+  ProfileCard,
+  profileReducer,
+  ProfileSchema
+};
 

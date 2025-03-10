@@ -1,4 +1,4 @@
-import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
+import { CombinedState, configureStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit';
 import { counterReducer } from 'entity/Counter';
 import { userReducers } from 'entity/User';
 import { NavigateOptions, To } from 'react-router-dom';
@@ -25,7 +25,7 @@ export const createReduxStore = (
     }
 
     const store = configureStore({
-        reducer: reducerManager.reduce,
+        reducer: reducerManager.reduce  as Reducer<CombinedState<StateSchema>>,
         devTools: __IS_DEV__, // включаем devTools при режиме dev
         preloadedState: initialState, // дефолтный state для тестов
         middleware: (getDefaultMiddleware) => getDefaultMiddleware({

@@ -18,7 +18,7 @@ export const Text = memo((props: TextProps) => {
     const {
         className,
         text,
-        theme,
+        theme = TextTheme.PRIMARY,
         title,
     } = props;
 
