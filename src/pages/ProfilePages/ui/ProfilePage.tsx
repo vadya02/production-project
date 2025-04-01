@@ -79,7 +79,9 @@ const onChangeCountry = useCallback((country: Country) => {
 }, [dispatch]);
 
   useEffect(() => {
-    dispatch(fetchProfileData())
+    if (__PROJECT__ !== 'storybook') {
+      dispatch(fetchProfileData())
+    }
   }, [dispatch])
 
   return (
