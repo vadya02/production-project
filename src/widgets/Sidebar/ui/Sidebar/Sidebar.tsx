@@ -21,7 +21,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
     };
     const { t } = useTranslation();
 
-    const itemsList = useMemo(() => SidebarItemList.map(item => (<SidebarItem item={item} collapsed key={item.path}/>)), [collapsed])
+    const itemsList = useMemo(() => SidebarItemList.map(item => (<SidebarItem item={item} collapsed={collapsed} key={item.path}/>)), [collapsed])
 
     return (
         <div
