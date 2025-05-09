@@ -21,7 +21,7 @@ import cls from './ArticleDetails.module.scss';
 
 interface ArticleDetailsProps {
   className?: string;
-  id?: string;
+  id: string;
 }
 
 const reducers: ReducersList = {
@@ -39,12 +39,6 @@ export const ArticleDetails = (props: ArticleDetailsProps) => {
   const article = useSelector(getArticleDetailsData)
   const {t} = useTranslation()
 
-  useEffect(() => {
-    if (__PROJECT__ !== 'storybook') {
-      dispatch(fetchArticleById('1'))
-    }
-  }, [dispatch])
-
   const renderBlock = useCallback((block: ArticleBlock) => {
     switch (block.type) {
       case ArticleBlockType.CODE:
@@ -57,6 +51,12 @@ export const ArticleDetails = (props: ArticleDetailsProps) => {
         return null;
     }
   }, [])
+
+  useEffect(() => {
+    if (__PROJECT__ !== 'storybook') {
+      dispatch(fetchArticleById(id))
+    }
+  }, [dispatch, id])
 
   let content;
 
