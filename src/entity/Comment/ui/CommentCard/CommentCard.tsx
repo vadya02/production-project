@@ -1,4 +1,6 @@
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { classNames } from 'shared/lib/classNames/classNames';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import { Text } from 'shared/ui/Text/Text';
@@ -30,11 +32,17 @@ export const CommentCard = (props: CommentCardProps) => {
     )
   }
 
+  if (!comment) {
+    return null;
+  }
+
   return (
     <div className={classNames(cls.CommentCard, {}, [className])}>
-      <div className={cls.header}>
-        {comment?.user.avatar ? <Avatar src={comment.user.avatar}/> : null}
-        <Text className={cls.username} text={comment?.user.username}/>
+      <div >
+        <AppLink to={`${RoutePath.profile}${comment?.user.id}`} className={cls.header}>
+          {comment?.user.avatar ? <Avatar src={comment.user.avatar}/> : null}
+          <Text className={cls.username} text={comment?.user.username}/>
+        </AppLink>
       </div>
       <Text className={cls.text} text={comment?.text}/>
     </div>

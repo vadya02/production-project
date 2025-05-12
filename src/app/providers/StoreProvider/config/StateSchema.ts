@@ -6,6 +6,7 @@ import { ArticleDetailsSchema } from 'entity/Article/model/types/articleDetailsS
 import { CounterSchema } from 'entity/Counter';
 import { ProfileSchema } from 'entity/Profile';
 import { UserSchema } from 'entity/User';
+import { AddCommentFormSchema } from 'features/addCommentForm';
 import { LoginSchema } from 'features/AuthByUsername/model/types/loginSchema';
 import { ArticleDetailsCommentSchema } from 'pages/ArticleDetailsPage';
 import { NavigateOptions, To } from 'react-router-dom';
@@ -19,6 +20,7 @@ export interface StateSchema {
     profile?: ProfileSchema;
     articleDetails?: ArticleDetailsSchema;
     articleDetailsComments?: ArticleDetailsCommentSchema;
+    addCommentForm?: AddCommentFormSchema;
 }
 
 // получаем ключи названий редьюсера

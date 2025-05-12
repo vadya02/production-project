@@ -1,7 +1,7 @@
 import { User } from "entity/User";
 
 export interface Comment {
-  id: number;
+  id: string;
   user: User;
   text: string;
 }
