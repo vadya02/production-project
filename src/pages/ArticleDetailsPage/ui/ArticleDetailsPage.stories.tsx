@@ -1,11 +1,12 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { Article, ArticleBlockType, ArticleType } from 'entity/Article/model/types/article';
+import { Article } from 'entity/Article';
+import { ArticleBlockType, ArticleType } from 'entity/Article/model/types/article';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import ArticleDetailsPage from './ArticleDetailsPage';
 
 export default {
-    title: 'shared/ArticleDetailsPage',
+    title: 'pages/ArticleDetailsPage',
     component: ArticleDetailsPage,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -22,6 +23,10 @@ const article: Article = {
     views: 1022,
     createdAt: '26.02.2022',
     type: [ArticleType.IT],
+    user: {
+        id: '1',
+        username: 'Ulbi tv',
+    },
     blocks: [
         {
             id: '1',
@@ -56,4 +61,4 @@ Normal.decorators = [StoreDecorator({
     articleDetails: {
         data: article,
     },
-})]
+})];
