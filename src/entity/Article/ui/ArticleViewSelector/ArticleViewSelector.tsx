@@ -1,0 +1,47 @@
+import { memo } from 'react';
+import ListIcon from 'shared/assets/icons/list-24-24.svg';
+import TiledIcon from 'shared/assets/icons/tiled-24-24.svg';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { Icon } from 'shared/ui/Icon/Icon';
+import { ArticleView } from '../../model/types/article';
+import cls from './ArticleViewSelector.module.scss';
+
+interface ArticleViewSelectorProps {
+  className?: string;
+  onViewChange?: (view: ArticleView) => void;
+  view?: ArticleView;
+}
+
+const viewTypes = [
+  {
+    view: ArticleView.SMALL,
+    icon: TiledIcon,
+  },
+  {
+    view: ArticleView.BIG,
+    icon: ListIcon,
+  }
+]
+
+export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
+  const {
+    className,
+    onViewChange,
+    view
+  } = props;
+
+  const onClick = (newView: ArticleView) => () => {
+    onViewChange?.(newView)
+  }
+
+  return (
+    <div className={classNames(cls.ArticleViewSelector, {}, [className])}>
+      {viewTypes.map((viewType) => (
+          <Button onClick={onClick(viewType.view)} theme={ButtonTheme.CLEAR}>
+            <Icon Svg={viewType.icon} className={classNames('', { [cls.notSelected]: viewType.view !== view })}/>
+          </Button>
+      ))}
+    </div>
+  );
+});
