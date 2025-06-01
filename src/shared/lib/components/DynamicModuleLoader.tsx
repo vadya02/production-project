@@ -30,10 +30,14 @@ export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props: Dynamic
         });
 
         return () => {
+            const mountedReducers = store.reducerManager.getMountedReducers();
             if (removeAfterUnmount) {
                 Object.entries(reducers).forEach(([name, reducer]) => {
-                    store.reducerManager.remove(name as StateSchemakey);
-                    dispatch({ type: 'reducer deleted ' });
+                    const mounted = mountedReducers[name as StateSchemakey]
+                    if (!mounted) {
+                        store.reducerManager.remove(name as StateSchemakey);
+                        dispatch({ type: 'reducer deleted ' });
+                    }
                 });
             }
         };
