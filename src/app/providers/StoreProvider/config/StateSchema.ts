@@ -8,12 +8,14 @@ import { ProfileSchema } from 'entity/Profile';
 import { UserSchema } from 'entity/User';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { LoginSchema } from 'features/AuthByUsername/model/types/loginSchema';
+import { UISchema } from 'features/UI';
 import { ArticleDetailsCommentSchema } from 'pages/ArticleDetailsPage';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 
 export interface StateSchema {
     counter: CounterSchema;
     user: UserSchema;
+    ui: UISchema;
 
     // асинхронные редьюсеры
     loginForm?: LoginSchema;
