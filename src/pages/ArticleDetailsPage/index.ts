@@ -1,5 +1,5 @@
 import { ArticleDetailsCommentSchema } from "./model/types/ArticleDetailsCommentsSchema";
-import { ArticleDetailsPageAsync } from "./ui/ArticleDetailsPage.async";
+import { ArticleDetailsPageAsync } from "./ui/ArticleDetailsPage/ArticleDetailsPage.async";
 
 export {
 	ArticleDetailsCommentSchema,
