@@ -1,26 +1,28 @@
-
-import { Story } from '@storybook/react';
-import { StateSchema, StoreProvider } from 'app/providers/StoreProvider';
-import { articleDetailsReducer } from 'entity/Article/model/slice/articleDetailsSlice';
-import { profileReducer } from 'entity/Profile';
-import { addCommentFormReducer } from 'features/addCommentForm/model/slices/addCommentFormSlice';
-import { loginReducer } from 'features/AuthByUsername/model/slices/loginSlice';
-import { articleDetailsCommentsReducer } from 'pages/ArticleDetailsPage/model/slices/articleDetailsCommentsSlice';
-import { ReducersList } from 'shared/lib/components/DynamicModuleLoader';
+import { Story } from "@storybook/react";
+import { StateSchema, StoreProvider } from "app/providers/StoreProvider";
+import { articleDetailsReducer } from "entity/Article/model/slice/articleDetailsSlice";
+import { profileReducer } from "entity/Profile";
+import { addCommentFormReducer } from "features/addCommentForm/model/slices/addCommentFormSlice";
+import { loginReducer } from "features/AuthByUsername/model/slices/loginSlice";
+import { articleDetailsPageReducer } from "pages/ArticleDetailsPage/model/slices";
+import { ReducersList } from "shared/lib/components/DynamicModuleLoader";
 
 const defaultAcyncReducers: ReducersList = {
-    loginForm: loginReducer,
-    profile: profileReducer,
-    addCommentForm: addCommentFormReducer,
-    articleDetails: articleDetailsReducer,
-    articleDetailsComments: articleDetailsCommentsReducer,
+	loginForm: loginReducer,
+	profile: profileReducer,
+	addCommentForm: addCommentFormReducer,
+	articleDetails: articleDetailsReducer,
+	articleDetailsPage: articleDetailsPageReducer,
 };
 
-export const StoreDecorator = (
-    state: DeepPartial<StateSchema>,
-    asyncReducers?: ReducersList,
-) => (StoryComponent: Story) => (
-    <StoreProvider initialState={state} asyncReducers={{ ...defaultAcyncReducers, ...asyncReducers }}>
-        <StoryComponent />
-    </StoreProvider>
-);
+export const StoreDecorator =
+	(state: DeepPartial<StateSchema>, asyncReducers?: ReducersList) =>
+	(StoryComponent: Story) =>
+		(
+			<StoreProvider
+				initialState={state}
+				asyncReducers={{ ...defaultAcyncReducers, ...asyncReducers }}
+			>
+				<StoryComponent />
+			</StoreProvider>
+		);
