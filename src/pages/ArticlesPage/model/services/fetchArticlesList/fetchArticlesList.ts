@@ -1,41 +1,58 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { ThunkConfig } from "app/providers/StoreProvider";
-import { Article } from "entity/Article";
-import { getArticlesPageLimit } from "../../selectors/articlesPageSelectors";
-
+import { Article, ArticleType } from "entity/Article";
+import { addQueryParams } from "shared/lib/url/addQueryParams/addQueryParams";
+import {
+	getArticlesPageLimit,
+	getArticlesPageNum,
+	getArticlesPageOrder,
+	getArticlesPageSearch,
+	getArticlesPageSort,
+	getArticlesPageType,
+} from "../../selectors/articlesPageSelectors";
 
 interface FetchArticlesListProps {
-    page?: number;
+	replace?: boolean;
 }
 
 export const fetchArticlesList = createAsyncThunk<
-    Article[],
-    FetchArticlesListProps,
-    ThunkConfig<string>
-    >(
-        'articlesPage/fetchArticlesList',
-        async (props, thunkApi) => {
-            const { extra, rejectWithValue, getState } = thunkApi;
-            const {page} = props;
+	Article[],
+	FetchArticlesListProps,
+	ThunkConfig<string>
+>("articlesPage/fetchArticlesList", async (props, thunkApi) => {
+	const { extra, rejectWithValue, getState } = thunkApi;
+	const sort = getArticlesPageSort(getState());
+	const order = getArticlesPageOrder(getState());
+	const search = getArticlesPageSearch(getState());
+	const page = getArticlesPageNum(getState());
+	const type = getArticlesPageType(getState());
+	const limit = getArticlesPageLimit(getState());
 
-            const limit = getArticlesPageLimit(getState())
+	try {
+		addQueryParams({
+			sort,
+			order,
+			search,
+			type,
+		});
+		const response = await extra.api.get<Article[]>("/articles", {
+			params: {
+				_expand: "user",
+				_limit: limit,
+				_page: page,
+				_sort: sort,
+				_order: order,
+				q: search,
+				type: type === ArticleType.ALL ? undefined : type,
+			},
+		});
 
-            try {
-                const response = await extra.api.get<Article[]>('/articles', {
-                    params: {
-                        _expand: 'user',
-                        _limit: limit,
-                        _page: page,
-                    },
-                });
+		if (!response.data) {
+			throw new Error();
+		}
 
-                if (!response.data) {
-                    throw new Error();
-                }
-
-                return response.data;
-            } catch (e) {
-                return rejectWithValue('error');
-            }
-        },
-    );
+		return response.data;
+	} catch (e) {
+		return rejectWithValue("error");
+	}
+});

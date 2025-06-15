@@ -1,10 +1,17 @@
-import { Article, ArticleView } from "./model/types/article";
+import { Article, ArticleType, ArticleView } from "./model/types/article";
 import { ArticleDetailsSchema } from "./model/types/articleDetailsSchema";
 import { ArticleDetails } from "./ui/ArticleDetails/ArticleDetails";
-import { ArticleList } from './ui/ArticleList/ArticleList';
+import { ArticleList } from "./ui/ArticleList/ArticleList";
+import { ArticleSortSelector } from "./ui/ArticleSortSelector/ArticleSortSelector";
 
 export {
-  Article, ArticleDetails, ArticleDetailsSchema, ArticleList,
-  ArticleView
+	Article,
+	ArticleDetails,
+	ArticleDetailsSchema,
+	ArticleList,
+	ArticleSortSelector,
+	ArticleType,
+	ArticleView,
 };
 
+export { ArticleSortField } from "./model/types/article";
