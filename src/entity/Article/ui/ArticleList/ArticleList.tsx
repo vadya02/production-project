@@ -17,13 +17,14 @@ interface ArticleListProps {
     target?: HTMLAttributeAnchorTarget;
 }
 
-const getSkeletons = (view: ArticleView) =>
-    new Array(view === ArticleView.SMALL ? 9 : 3)
-        .fill(0)
-        .map((item, index) => <ArticleListItemSkeleton className={cls.card} key={index} view={view} />);
+const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
+    .fill(0)
+    .map((item, index) => <ArticleListItemSkeleton className={cls.card} key={index} view={view} />);
 
 export const ArticleList = memo((props: ArticleListProps) => {
-    const { className, articles, view = ArticleView.SMALL, isLoading, target } = props;
+    const {
+        className, articles, view = ArticleView.SMALL, isLoading, target,
+    } = props;
     const { t } = useTranslation();
 
     const isBig = view === ArticleView.BIG;
@@ -31,7 +32,9 @@ export const ArticleList = memo((props: ArticleListProps) => {
     const itemsPerRow = isBig ? 1 : 3;
     const rowCount = isBig ? articles.length : Math.ceil(articles.length / itemsPerRow);
 
-    const rowRender = ({ index, isScrolling, key, style }: ListRowProps) => {
+    const rowRender = ({
+        index, isScrolling, key, style,
+    }: ListRowProps) => {
         const items = [];
         const fromIndex = index * itemsPerRow;
         const toIndex = Math.min(fromIndex + itemsPerRow, articles.length);
@@ -44,7 +47,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
                     target={target}
                     key={`str${i}`}
                     className={cls.card}
-                />
+                />,
             );
         }
 
@@ -65,7 +68,9 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
     return (
         <WindowScroller scrollElement={document.getElementById(PAGE_ID) as Element}>
-            {({ height, width, registerChild, onChildScroll, isScrolling, scrollTop }) => (
+            {({
+                height, width, registerChild, onChildScroll, isScrolling, scrollTop,
+            }) => (
                 <div ref={registerChild} className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
                     <List
                         height={height ?? 700}

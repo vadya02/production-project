@@ -13,7 +13,7 @@ export function useTheme(): UseThemeResult {
         // const newTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK;
         let newTheme: Theme;
         switch (theme) {
-            case Theme.DARK:
+        case Theme.DARK:
             newTheme = Theme.LIGHT;
             break;
         case Theme.LIGHT:

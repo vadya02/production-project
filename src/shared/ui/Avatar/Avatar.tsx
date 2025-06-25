@@ -10,23 +10,23 @@ interface AvatarProps {
 }
 
 export const Avatar = (props: AvatarProps) => {
-  const {
-    className,
-    size,
-    src,
-    alt
-  } = props;
+    const {
+        className,
+        size,
+        src,
+        alt,
+    } = props;
 
-  const mods: Mods = {}
+    const mods: Mods = {};
 
-  const styles = useMemo<CSSProperties>(() => {
-    return {
-      width: size || 100,
-      height: size || 100 ,
-    }
-  }, [size])
+    const styles = useMemo<CSSProperties>(() => {
+        return {
+            width: size || 100,
+            height: size || 100,
+        };
+    }, [size]);
 
-  return (
-    <img src={src} alt={alt} style={styles} className={classNames(cls.Avatar, mods, [className])} />
-  );
+    return (
+        <img src={src} alt={alt} style={styles} className={classNames(cls.Avatar, mods, [className])} />
+    );
 };

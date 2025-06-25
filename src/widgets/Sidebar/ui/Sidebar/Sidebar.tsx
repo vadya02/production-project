@@ -1,13 +1,11 @@
+import { ThemeSwitcher } from 'features/ThemeSwitcher';
 import { memo, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
-import {
-    Button, ButtonSize, ButtonTheme,
-} from 'shared/ui/Button/Button';
+import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button';
 import { LangSwitcher } from 'shared/ui/LangSwitcher';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
-import { getSidebarItem } from 'widgets/Sidebar/model/selectors/getSidebarItems';
+import { getSidebarItem } from '../../model/selectors/getSidebarItems';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
 
@@ -22,17 +20,15 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
     };
     const { t } = useTranslation();
 
-    const sidebarItemList = useSelector(getSidebarItem)
+    const sidebarItemList = useSelector(getSidebarItem);
 
-    const itemsList = useMemo(() => sidebarItemList.map(item => (<SidebarItem item={item} collapsed={collapsed} key={item.path}/>)), [collapsed])
+    const itemsList = useMemo(
+        () => sidebarItemList.map((item) => <SidebarItem item={item} collapsed={collapsed} key={item.path} />),
+        [collapsed, sidebarItemList]
+    );
 
     return (
-        <div
-            data-testid="sidebar"
-            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
-                className,
-            ])}
-        >
+        <div data-testid="sidebar" className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
             <Button
                 data-testid="sidebar-toggle"
                 onClick={onToggle}
@@ -42,9 +38,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             >
                 {collapsed ? '>' : '<'}
             </Button>
-            <div className={cls.items}>
-                {itemsList}
-            </div>
+            <div className={cls.items}>{itemsList}</div>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher className={cls.lang} short={collapsed} />

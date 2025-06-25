@@ -1,7 +1,9 @@
 import {
     AnyAction, combineReducers, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
-import { MountedReducers, ReducerManager, StateSchema, StateSchemakey } from './StateSchema';
+import {
+    MountedReducers, ReducerManager, StateSchema, StateSchemakey,
+} from './StateSchema';
 
 // ReducersMapObject<StateSchema> - тип корневого редьюсера
 export function createReducerManager(initialReducers: ReducersMapObject<StateSchema>): ReducerManager {

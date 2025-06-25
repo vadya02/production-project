@@ -9,14 +9,14 @@ interface ArticleCodeBlockComponentProps {
 }
 
 export const ArticleCodeBlockComponent = (props: ArticleCodeBlockComponentProps) => {
-  const {
-    className,
-    block,
-  } = props;
+    const {
+        className,
+        block,
+    } = props;
 
-  return (
-    <div className={classNames(cls.ArticleCodeBlockComponent, {}, [className])}>
-      <Code text={block.code}/>
-    </div>
-  );
+    return (
+        <div className={classNames(cls.ArticleCodeBlockComponent, {}, [className])}>
+            <Code text={block.code} />
+        </div>
+    );
 };

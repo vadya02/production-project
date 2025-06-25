@@ -1,4 +1,10 @@
-import { getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading } from 'entity/Article/model/selectors/articleDetails';
+/* eslint-disable indent */
+// eslint-disable-next-line max-len
+import {
+    getArticleDetailsData,
+    getArticleDetailsError,
+    getArticleDetailsIsLoading,
+} from 'entity/Article/model/selectors/articleDetails';
 import { fetchArticleById } from 'entity/Article/model/services/fetchArticleById/fetchArticleById';
 import { articleDetailsReducer } from 'entity/Article/model/slice/articleDetailsSlice';
 import { ArticleBlock, ArticleBlockType } from 'entity/Article/model/types/article';
@@ -20,94 +26,78 @@ import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleT
 import cls from './ArticleDetails.module.scss';
 
 interface ArticleDetailsProps {
-  className?: string;
-  id: string;
+    className?: string;
+    id: string;
 }
 
 const reducers: ReducersList = {
-  articleDetails: articleDetailsReducer
-}
+    articleDetails: articleDetailsReducer,
+};
 
 export const ArticleDetails = (props: ArticleDetailsProps) => {
-  const {
-    className,
-    id,
-  } = props;
-  const dispatch = useAppDispatch()
-  const isLoading = useSelector(getArticleDetailsIsLoading);
-  const error = useSelector(getArticleDetailsError);
-  const article = useSelector(getArticleDetailsData)
-  const {t} = useTranslation()
+    const { className, id } = props;
+    const dispatch = useAppDispatch();
+    const isLoading = useSelector(getArticleDetailsIsLoading);
+    const error = useSelector(getArticleDetailsError);
+    const article = useSelector(getArticleDetailsData);
+    const { t } = useTranslation();
 
-  const renderBlock = useCallback((block: ArticleBlock) => {
-    switch (block.type) {
-      case ArticleBlockType.CODE:
-        return <ArticleCodeBlockComponent block={block} className={cls.block} key={block.id}/>
-      case ArticleBlockType.TEXT:
-        return <ArticleTextBlockComponent block={block} className={cls.block} key={block.id}/>
-      case ArticleBlockType.IMAGE:
-        return <ArticleImageBlockComponent block={block} className={cls.block} key={block.id}/>
-      default:
-        return null;
+    const renderBlock = useCallback((block: ArticleBlock) => {
+        switch (block.type) {
+            case ArticleBlockType.CODE:
+                return <ArticleCodeBlockComponent block={block} className={cls.block} key={block.id} />;
+            case ArticleBlockType.TEXT:
+                return <ArticleTextBlockComponent block={block} className={cls.block} key={block.id} />;
+            case ArticleBlockType.IMAGE:
+                return <ArticleImageBlockComponent block={block} className={cls.block} key={block.id} />;
+            default:
+                return null;
+        }
+    }, []);
+
+    useEffect(() => {
+        if (__PROJECT__ !== 'storybook') {
+            dispatch(fetchArticleById(id));
+        }
+    }, [dispatch, id]);
+
+    let content;
+
+    if (isLoading) {
+        content = (
+            <>
+                <Skeleton className={cls.avatar} width={200} height={200} border="50%" />
+                <Skeleton className={cls.title} width={300} height={32} />
+                <Skeleton className={cls.skeleton} width={600} height={24} />
+                <Skeleton className={cls.skeleton} width="100%" height={200} />
+                <Skeleton className={cls.skeleton} width="100%" height={200} />
+            </>
+        );
+    } else if (error) {
+        content = <Text align={TextAlign.CENTER} title={t('Произошла ошибка при загрузке статьи.')} />;
+    } else {
+        content = (
+            <>
+                <div className={cls.avatarWrapper}>
+                    <Avatar src={article?.img} size={200} className={cls.avatar} />
+                </div>
+                <Text className={cls.title} title={article?.title} text={article?.subtitle} size={TextSize.M} />
+                <div className={cls.articleInfo}>
+                    <Icon className={cls.icon} Svg={EyeIcon} />
+                    <Text text={String(article?.views)} />
+                </div>
+                <div className={cls.articleInfo}>
+                    <Icon className={cls.icon} Svg={CalendarIcon} />
+                    <Text text={article?.createdAt} />
+                </div>
+                {article?.blocks.map(renderBlock)}
+            </>
+        );
     }
-  }, [])
 
-  useEffect(() => {
-    if (__PROJECT__ !== 'storybook') {
-      dispatch(fetchArticleById(id))
-    }
-  }, [dispatch, id])
-
-  let content;
-
-  if (isLoading) {
-    content = (
-      <>
-        <Skeleton className={cls.avatar} width={200} height={200} border="50%" />
-        <Skeleton className={cls.title} width={300} height={32} />
-        <Skeleton className={cls.skeleton} width={600} height={24} />
-        <Skeleton className={cls.skeleton} width="100%" height={200} />
-        <Skeleton className={cls.skeleton} width="100%" height={200} />
-    </>
-    )
-  } else if (error) {
-    content = (<Text align={TextAlign.CENTER} title={t('Произошла ошибка при загрузке статьи.')}/>)
-  } else {
-    content = (
-      <>
-        <div className={cls.avatarWrapper}>
-          <Avatar
-            src={article?.img}
-            size={200}
-            className={cls.avatar}
-          />
-        </div>
-        <Text
-            className={cls.title}
-            title={article?.title}
-            text={article?.subtitle}
-            size={TextSize.M}
-        />
-        <div className={cls.articleInfo}>
-            <Icon className={cls.icon} Svg={EyeIcon} />
-            <Text text={String(article?.views)} />
-        </div>
-        <div className={cls.articleInfo}>
-            <Icon className={cls.icon} Svg={CalendarIcon} />
-            <Text text={article?.createdAt} />
-        </div>
-        {article?.blocks.map(renderBlock)}
-      </>
-    )
-  }
-
-
-
-  return (
-    <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-      <div className={classNames(cls.ArticleDetails, {}, [className])}>
-        {content}
-      </div>
-    </DynamicModuleLoader>
-  );
+    return (
+        <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+            <div className={classNames(cls.ArticleDetails, {}, [className])}>{content}</div>
+        </DynamicModuleLoader>
+    );
 };

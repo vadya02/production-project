@@ -7,35 +7,34 @@ import ProfileIcon from 'shared/assets/icons/profile-20-20.svg';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { SidebarItemType } from '../types/sidebar';
 
-export const getSidebarItem = createSelector(getUserAuthData, (userData => {
-  const sidebarItemList: SidebarItemType[] = [
-    {
-      path: RoutePath.main,
-      Icon: MainIcon,
-      text: 'Главная',
-    },
-    {
-        path: RoutePath.about,
-        Icon: AboutIcon,
-        text: 'О сайте',
-    },
-  ]
-  if (userData) {
-    sidebarItemList.push(
-      {
-        path: RoutePath.profile + userData.id,
-        Icon: ProfileIcon,
-        text: 'Профиль',
-        authOnly: true,
-      },
-      {
-          path: RoutePath.articles,
-          Icon: ArticleIcon,
-          text: 'Статьи',
-          authOnly: true,
-      },
-    )
-  }
-  return sidebarItemList
-}))
-
+export const getSidebarItem = createSelector(getUserAuthData, ((userData) => {
+    const sidebarItemList: SidebarItemType[] = [
+        {
+            path: RoutePath.main,
+            Icon: MainIcon,
+            text: 'Главная',
+        },
+        {
+            path: RoutePath.about,
+            Icon: AboutIcon,
+            text: 'О сайте',
+        },
+    ];
+    if (userData) {
+        sidebarItemList.push(
+            {
+                path: RoutePath.profile + userData.id,
+                Icon: ProfileIcon,
+                text: 'Профиль',
+                authOnly: true,
+            },
+            {
+                path: RoutePath.articles,
+                Icon: ArticleIcon,
+                text: 'Статьи',
+                authOnly: true,
+            },
+        );
+    }
+    return sidebarItemList;
+}));

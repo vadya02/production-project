@@ -3,9 +3,8 @@ import { AppDispatch, createReduxStore } from './config/store';
 import { StoreProvider } from './ui/StoreProvider';
 
 export {
-  AppDispatch,
-  // eslint-disable-next-line indent
+    AppDispatch,
+    // eslint-disable-next-line indent
   createReduxStore, StateSchema, StoreProvider,
-  ThunkConfig
+    ThunkConfig,
 };
-

@@ -1,4 +1,6 @@
-import { CombinedState, configureStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit';
+import {
+    CombinedState, configureStore, Reducer, ReducersMapObject,
+} from '@reduxjs/toolkit';
 import { counterReducer } from 'entity/Counter';
 import { userReducers } from 'entity/User';
 import { uiReducer } from 'features/UI';
@@ -21,17 +23,17 @@ export const createReduxStore = (
 
     const extraArg: ThunkExtraArg = {
         api: $api,
-    }
+    };
 
     const store = configureStore({
-        reducer: reducerManager.reduce  as Reducer<CombinedState<StateSchema>>,
+        reducer: reducerManager.reduce as Reducer<CombinedState<StateSchema>>,
         devTools: __IS_DEV__, // включаем devTools при режиме dev
         preloadedState: initialState, // дефолтный state для тестов
         middleware: (getDefaultMiddleware) => getDefaultMiddleware({
             thunk: {
                 extraArgument: extraArg, // передаем extraArg в thunk middleware
-            }
-        })
+            },
+        }),
     });
 
     // @ts-ignore

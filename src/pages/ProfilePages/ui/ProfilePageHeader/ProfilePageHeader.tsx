@@ -1,4 +1,6 @@
-import { getProfileData, getProfileReadonly, profileActions, updateProfileData } from 'entity/Profile';
+import {
+    getProfileData, getProfileReadonly, profileActions, updateProfileData,
+} from 'entity/Profile';
 import { getUserAuthData } from 'entity/User';
 import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -20,8 +22,8 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
 
     const { t } = useTranslation('profile');
     const authData = useSelector(getUserAuthData);
-    const profileData = useSelector(getProfileData)
-    const canEdit = authData?.id === profileData?.id
+    const profileData = useSelector(getProfileData);
+    const canEdit = authData?.id === profileData?.id;
 
     const readonly = useSelector(getProfileReadonly);
     const dispatch = useAppDispatch();
@@ -44,33 +46,33 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
             {canEdit && (
                 <div className={cls.btnsWrapper}>
                     {readonly
-                ? (
-                    <Button
-                        className={cls.editBtn}
-                        theme={ButtonTheme.OUTLINE}
-                        onClick={onEdit}
-                    >
-                        {t('Редактировать')}
-                    </Button>
-                )
-                : (
-                    <>
-                        <Button
-                            className={cls.editBtn}
-                            theme={ButtonTheme.OUTLINE_RED}
-                            onClick={onCancelEdit}
-                        >
-                            {t('Отменить')}
-                        </Button>
-                        <Button
-                            className={cls.saveBtn}
-                            theme={ButtonTheme.OUTLINE}
-                            onClick={onSave}
-                        >
-                            {t('Сохранить')}
-                        </Button>
-                    </>
-                )}
+                        ? (
+                            <Button
+                                className={cls.editBtn}
+                                theme={ButtonTheme.OUTLINE}
+                                onClick={onEdit}
+                            >
+                                {t('Редактировать')}
+                            </Button>
+                        )
+                        : (
+                            <>
+                                <Button
+                                    className={cls.editBtn}
+                                    theme={ButtonTheme.OUTLINE_RED}
+                                    onClick={onCancelEdit}
+                                >
+                                    {t('Отменить')}
+                                </Button>
+                                <Button
+                                    className={cls.saveBtn}
+                                    theme={ButtonTheme.OUTLINE}
+                                    onClick={onSave}
+                                >
+                                    {t('Сохранить')}
+                                </Button>
+                            </>
+                        )}
                 </div>
             )}
         </div>
