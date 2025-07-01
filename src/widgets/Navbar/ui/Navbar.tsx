@@ -1,4 +1,3 @@
-import { BugButton } from 'app/providers/ErrorBoundary/ui/BugButton';
 import { getUserAuthData, userActions } from 'entity/User';
 import { LoginModal } from 'features/AuthByUsername';
 import { memo, useCallback, useState } from 'react';
@@ -7,7 +6,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
+import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { Dropdown } from 'shared/ui/Dropdown';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import cls from './Navbar.module.scss';
 
@@ -35,33 +36,36 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 
     if (authData) {
         return (
-            <div className={classNames(cls.navbar, {}, [className])}>
+            <header className={classNames(cls.Navbar, {}, [className])}>
                 <Text className={cls.appName} title={t('Ulbi TV App')} theme={TextTheme.INVERTED} />
                 <AppLink to={RoutePath.article_create} theme={AppLinkTheme.SECONDARY} className={cls.createBtn}>
                     {t('Создать статью')}
                 </AppLink>
-                <Button theme={ButtonTheme.CLEAR_INVERTED} className={classNames(cls.links)} onClick={onLogout}>
-                    {t('Выйти')}
-                </Button>
-            </div>
+                <Dropdown
+                    direction="bottom left"
+                    className={cls.dropdown}
+                    items={[
+                        {
+                            content: t('Профиль'),
+                            href: RoutePath.profile + authData.id,
+                        },
+                        {
+                            content: t('Выйти'),
+                            onClick: onLogout,
+                        },
+                    ]}
+                    trigger={<Avatar size={30} src={authData.avatar} />}
+                />
+            </header>
         );
     }
 
     return (
-        <div className={classNames(cls.navbar, {}, [className])}>
-            <Button theme={ButtonTheme.CLEAR_INVERTED} className={classNames(cls.links)} onClick={onShowModal}>
+        <header className={classNames(cls.Navbar, {}, [className])}>
+            <Button theme={ButtonTheme.CLEAR_INVERTED} className={cls.links} onClick={onShowModal}>
                 {t('Войти')}
             </Button>
             {isAuthModal && <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />}
-            <div className={cls.links}>
-                <AppLink theme={AppLinkTheme.SECONDARY} to="/" className={cls.mainLink}>
-                    {t('Главная')}
-                </AppLink>
-                <AppLink theme={AppLinkTheme.SECONDARY} to="/about">
-                    {t('О нас')}
-                </AppLink>
-                <BugButton />
-            </div>
-        </div>
+        </header>
     );
 });

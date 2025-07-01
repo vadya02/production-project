@@ -36,7 +36,7 @@ export const CountrySelect = memo(({ className, value, onChange, readonly }: Cou
             label={t('Укажите страну')}
             items={options}
             readonly={readonly}
-            direction="top"
+            direction="bottom right"
         />
     );
 });
