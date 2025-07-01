@@ -7,6 +7,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { HStack } from 'shared/ui/Stack';
+import { Text } from 'shared/ui/Text/Text';
 
 interface ProfilePageHeaderProps {
     className?: string;
@@ -19,7 +20,6 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
     const authData = useSelector(getUserAuthData);
     const profileData = useSelector(getProfileData);
     const canEdit = authData?.id === profileData?.id;
-
     const readonly = useSelector(getProfileReadonly);
     const dispatch = useAppDispatch();
 
@@ -37,6 +37,7 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
 
     return (
         <HStack max justify="between" className={classNames('', {}, [className])}>
+            <Text title={t('Профиль')} />
             {canEdit && (
                 <div>
                     {readonly ? (

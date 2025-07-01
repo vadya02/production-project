@@ -33,24 +33,15 @@ interface ProfilePageProps {
     className?: string;
 }
 
-const ProfilePage = (props: ProfilePageProps) => {
-    const { className } = props;
+const ProfilePage = ({ className }: ProfilePageProps) => {
     const { t } = useTranslation('profile');
-
+    const dispatch = useAppDispatch();
     const formData = useSelector(getProfileForm);
-    const error = useSelector(getProfileError);
     const isLoading = useSelector(getProfileIsLoading);
+    const error = useSelector(getProfileError);
     const readonly = useSelector(getProfileReadonly);
     const validateErrors = useSelector(getProfileValidateErrors);
     const { id } = useParams<{ id: string }>();
-
-    const dispatch = useAppDispatch();
-
-    useInitialEffect(() => {
-        if (id) {
-            dispatch(fetchProfileData(id));
-        }
-    });
 
     const validateErrorTranslates = {
         [ValidateProfileError.SERVER_ERROR]: t('Серверная ошибка при сохранении'),
@@ -59,6 +50,13 @@ const ProfilePage = (props: ProfilePageProps) => {
         [ValidateProfileError.INCORRECT_USER_DATA]: t('Имя и фамилия обязательны'),
         [ValidateProfileError.INCORRECT_AGE]: t('Некорректный возраст'),
     };
+
+    useInitialEffect(() => {
+        console.log({ id });
+        if (id) {
+            dispatch(fetchProfileData(id));
+        }
+    });
 
     const onChangeFirstname = useCallback(
         (value?: string) => {
@@ -127,8 +125,8 @@ const ProfilePage = (props: ProfilePageProps) => {
                         ))}
                     <ProfileCard
                         data={formData}
-                        error={error}
                         isLoading={isLoading}
+                        error={error}
                         readonly={readonly}
                         onChangeFirstname={onChangeFirstname}
                         onChangeLastname={onChangeLastname}

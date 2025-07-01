@@ -1,6 +1,4 @@
-import {
-    CombinedState, configureStore, Reducer, ReducersMapObject,
-} from '@reduxjs/toolkit';
+import { CombinedState, configureStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit';
 import { counterReducer } from 'entity/Counter';
 import { userReducers } from 'entity/User';
 import { uiReducer } from 'features/UI';
@@ -8,18 +6,15 @@ import { $api } from 'shared/api/api';
 import { StateSchema, ThunkExtraArg } from './StateSchema';
 import { createReducerManager } from './reducerManager';
 
-export const createReduxStore = (
-    initialState?: StateSchema,
-    asyncReducers?: ReducersMapObject<StateSchema>,
-) => {
-    const rootReducer: ReducersMapObject<StateSchema> = { // ReducersMapObject<> -тип для объединения редьюсеров
+export function createReduxStore(initialState?: StateSchema, asyncReducers?: ReducersMapObject<StateSchema>) {
+    const rootReducers: ReducersMapObject<StateSchema> = {
         ...asyncReducers,
         counter: counterReducer,
         user: userReducers,
         ui: uiReducer,
     };
 
-    const reducerManager = createReducerManager(rootReducer);
+    const reducerManager = createReducerManager(rootReducers);
 
     const extraArg: ThunkExtraArg = {
         api: $api,
@@ -27,19 +22,20 @@ export const createReduxStore = (
 
     const store = configureStore({
         reducer: reducerManager.reduce as Reducer<CombinedState<StateSchema>>,
-        devTools: __IS_DEV__, // включаем devTools при режиме dev
-        preloadedState: initialState, // дефолтный state для тестов
-        middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-            thunk: {
-                extraArgument: extraArg, // передаем extraArg в thunk middleware
-            },
-        }),
+        devTools: __IS_DEV__,
+        preloadedState: initialState,
+        middleware: (getDefaultMiddleware) =>
+            getDefaultMiddleware({
+                thunk: {
+                    extraArgument: extraArg,
+                },
+            }),
     });
 
     // @ts-ignore
     store.reducerManager = reducerManager;
 
     return store;
-};
+}
 
 export type AppDispatch = ReturnType<typeof createReduxStore>['dispatch'];
