@@ -1,7 +1,7 @@
 import { Country } from 'entity/Country';
 import { Currency } from 'entity/Currency';
-import { ValidateProfileError } from 'entity/Profile';
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
+import { ValidateProfileError } from '../../types/editableProfileCardSchema';
 import { updateProfileData } from './updateProfileData';
 
 const data = {
@@ -55,8 +55,6 @@ describe('updateProfileData.test', () => {
         const result = await thunk.callThunk();
 
         expect(result.meta.requestStatus).toBe('rejected');
-        expect(result.payload).toEqual([
-            ValidateProfileError.INCORRECT_USER_DATA,
-        ]);
+        expect(result.payload).toEqual([ValidateProfileError.INCORRECT_USER_DATA]);
     });
 });

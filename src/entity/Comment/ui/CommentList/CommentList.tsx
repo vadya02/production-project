@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { VStack } from 'shared/ui/Stack';
@@ -11,9 +12,8 @@ interface CommentListProps {
     isLoading?: boolean;
 }
 
-export const CommentList = (props: CommentListProps) => {
-    const { className, comments, isLoading } = props;
-
+export const CommentList = memo((props: CommentListProps) => {
+    const { className, isLoading, comments } = props;
     const { t } = useTranslation();
 
     if (isLoading) {
@@ -35,4 +35,4 @@ export const CommentList = (props: CommentListProps) => {
             )}
         </VStack>
     );
-};
+});
