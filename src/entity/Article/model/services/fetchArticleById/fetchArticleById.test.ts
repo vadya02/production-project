@@ -46,7 +46,7 @@ const article: Article = {
 describe('fetchArticleById.test', () => {
     test('success', async () => {
         const thunk = new TestAsyncThunk(fetchArticleById);
-        thunk.api.get.mockReturnValue(Promise.resolve({ article }));
+        thunk.api.get.mockReturnValue(Promise.resolve({ data: article }));
 
         const result = await thunk.callThunk('1');
 
