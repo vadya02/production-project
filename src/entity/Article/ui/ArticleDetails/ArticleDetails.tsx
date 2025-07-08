@@ -100,7 +100,9 @@ export const ArticleDetails = (props: ArticleDetailsProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <div className={classNames(cls.ArticleDetails, {}, [className])}>{content}</div>
+            <VStack gap="16" max className={classNames(cls.ArticleDetails, {}, [className])}>
+                {content}
+            </VStack>
         </DynamicModuleLoader>
     );
 };
