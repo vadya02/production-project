@@ -1,6 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { Article, ArticleView } from '../../model/types/article';
+import { ArticleView } from 'entity/Article';
+import { Article } from '../../model/types/article';
 import { ArticleListItem } from './ArticleListItem';
 
 export default {
@@ -25,12 +26,7 @@ const article = {
         username: 'Ulbi tv',
         avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg',
     },
-    type: [
-        'IT',
-        'SCIENCE',
-        'POLITICS',
-        'ECONOMICS',
-    ],
+    type: ['IT', 'SCIENCE', 'POLITICS', 'ECONOMICS'],
     blocks: [
         {
             id: '1',

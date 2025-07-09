@@ -1,5 +1,6 @@
 /* eslint-disable indent */
 // eslint-disable-next-line max-len
+import { ArticleBlockType } from 'entity/Article/model/consts/articleConsts';
 import {
     getArticleDetailsData,
     getArticleDetailsError,
@@ -7,7 +8,7 @@ import {
 } from 'entity/Article/model/selectors/articleDetails';
 import { fetchArticleById } from 'entity/Article/model/services/fetchArticleById/fetchArticleById';
 import { articleDetailsReducer } from 'entity/Article/model/slice/articleDetailsSlice';
-import { ArticleBlock, ArticleBlockType } from 'entity/Article/model/types/article';
+import { ArticleBlock } from 'entity/Article/model/types/article';
 import { useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';

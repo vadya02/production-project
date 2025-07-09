@@ -1,8 +1,10 @@
+import { UserRole } from './model/consts/userConsts';
 import { getUserAuthData } from './model/selectors/getUserAuthData/getUserAuthData';
 import { getUserInited } from './model/selectors/getUserInited/getUserInited';
 import { userActions, userReducers } from './model/slices/userSlice';
-import { User, UserRole, UserSchema } from './model/types/user';
 
-export { getUserAuthData, getUserInited, User, userActions, userReducers, UserRole, UserSchema };
+export { getUserAuthData, getUserInited, userActions, userReducers, UserRole };
 
 export { getUserRoles, isUserAdmin, isUserManager } from './model/selectors/roleSelectors';
+
+export type { User, UserSchema } from './model/types/user';

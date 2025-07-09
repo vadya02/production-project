@@ -1,4 +1,5 @@
-import { Article, ArticleView } from 'entity/Article/model/types/article';
+import { ArticleView } from 'entity/Article';
+import { Article } from 'entity/Article/model/types/article';
 import { HTMLAttributeAnchorTarget, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { List, ListRowProps, WindowScroller } from 'react-virtualized';

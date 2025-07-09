@@ -1,9 +1,6 @@
-import { ArticleDetailsCommentSchema } from './model/types/ArticleDetailsCommentsSchema';
 import { ArticleDetailsPageAsync } from './ui/ArticleDetailsPage/ArticleDetailsPage.async';
 
-export {
-    ArticleDetailsCommentSchema,
-    ArticleDetailsPageAsync as ArticleDetailsPage,
-};
+export { ArticleDetailsPageAsync as ArticleDetailsPage };
 
-export { ArticleDetailsPageSchema } from './model/types';
+export type { ArticleDetailsPageSchema } from './model/types';
+export type { ArticleDetailsCommentSchema } from './model/types/ArticleDetailsCommentsSchema';
