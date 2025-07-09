@@ -18,6 +18,4 @@ export const Normal = Template.bind({});
 Normal.args = {
     onSendComment: action('onSendComment'),
 };
-Normal.decorators = [
-    StoreDecorator({}),
-];
+Normal.decorators = [StoreDecorator({})];
