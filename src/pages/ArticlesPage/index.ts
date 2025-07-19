@@ -1,6 +1,4 @@
-import { articlesPageReducer } from './model/slices/articlesPageSlice';
-import { ArticlesPageAsync } from './ui/ArticlesPage/ArticlesPage.async';
-
-export { ArticlesPageAsync as ArticlesPage, articlesPageReducer };
+export { articlesPageReducer } from './model/slices/articlesPageSlice';
+export { ArticlesPageAsync as ArticlesPage } from './ui/ArticlesPage/ArticlesPage.async';
 
 export type { ArticlesPageSchema } from './model/types/articlesPageSchema';

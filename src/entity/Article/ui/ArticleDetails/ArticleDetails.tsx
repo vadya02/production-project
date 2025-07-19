@@ -1,14 +1,5 @@
 /* eslint-disable indent */
 // eslint-disable-next-line max-len
-import { ArticleBlockType } from 'entity/Article/model/consts/articleConsts';
-import {
-    getArticleDetailsData,
-    getArticleDetailsError,
-    getArticleDetailsIsLoading,
-} from 'entity/Article/model/selectors/articleDetails';
-import { fetchArticleById } from 'entity/Article/model/services/fetchArticleById/fetchArticleById';
-import { articleDetailsReducer } from 'entity/Article/model/slice/articleDetailsSlice';
-import { ArticleBlock } from 'entity/Article/model/types/article';
 import { useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
@@ -22,6 +13,15 @@ import { Icon } from 'shared/ui/Icon/Icon';
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import { HStack, VStack } from 'shared/ui/Stack';
 import { Text, TextAlign, TextSize } from 'shared/ui/Text/Text';
+import { ArticleBlockType } from '../../model/consts/articleConsts';
+import {
+    getArticleDetailsData,
+    getArticleDetailsError,
+    getArticleDetailsIsLoading,
+} from '../../model/selectors/articleDetails';
+import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
+import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
+import { ArticleBlock } from '../../model/types/article';
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
