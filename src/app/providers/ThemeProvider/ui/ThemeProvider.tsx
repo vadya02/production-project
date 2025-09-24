@@ -17,7 +17,7 @@ const ThemeProvider = (props: ThemeProviderProps) => {
             theme,
             setTheme,
         }),
-        [theme]
+        [theme],
     );
 
     return <ThemeContext.Provider value={defaultProps}>{children}</ThemeContext.Provider>;

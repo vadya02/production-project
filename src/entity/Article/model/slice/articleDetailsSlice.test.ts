@@ -62,7 +62,7 @@ describe('articleDetails.test', () => {
         };
 
         expect(
-            articleDetailsReducer(state as ArticleDetailsSchema, fetchArticleById.fulfilled(article, '', '1'))
+            articleDetailsReducer(state as ArticleDetailsSchema, fetchArticleById.fulfilled(article, '', '1')),
         ).toEqual({
             isLoading: false,
             data: article,
@@ -78,8 +78,8 @@ describe('articleDetails.test', () => {
         expect(
             articleDetailsReducer(
                 state as ArticleDetailsSchema,
-                fetchArticleById.rejected(new Error('Ошибка сервера'), '', '1')
-            )
+                fetchArticleById.rejected(new Error('Ошибка сервера'), '', '1'),
+            ),
         ).toEqual({
             isLoading: false,
             error: 'Ошибка сервера',

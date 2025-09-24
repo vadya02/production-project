@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ThunkConfig } from 'app/providers/StoreProvider';
-import { Article, ArticleType } from 'entity/Article';
-import { addQueryParams } from 'shared/lib/url/addQueryParams/addQueryParams';
+import { ThunkConfig } from '@/app/providers/StoreProvider';
+import { Article, ArticleType } from '@/entity/Article';
+import { addQueryParams } from '@/shared/lib/url/addQueryParams/addQueryParams';
 import {
     getArticlesPageLimit,
     getArticlesPageNum,
@@ -53,5 +53,5 @@ export const fetchArticlesList = createAsyncThunk<Article[], FetchArticlesListPr
         } catch (e) {
             return rejectWithValue('error');
         }
-    }
+    },
 );

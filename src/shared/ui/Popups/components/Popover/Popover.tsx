@@ -1,7 +1,7 @@
 import { Popover as HPopover } from '@headlessui/react';
 import { ReactNode } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { DropdownDirection } from 'shared/types/ui';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { DropdownDirection } from '@/shared/types/ui';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
 import cls from './Popover.module.scss';
@@ -14,7 +14,9 @@ interface PopoverProps {
 }
 
 export function Popover(props: PopoverProps) {
-    const { className, trigger, direction = 'bottom right', children } = props;
+    const {
+        className, trigger, direction = 'bottom right', children,
+    } = props;
 
     const menuClasses = [mapDirectionClass[direction]];
 

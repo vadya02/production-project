@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ThunkConfig } from 'app/providers/StoreProvider';
+import { ThunkConfig } from '@/app/providers/StoreProvider';
 import {
     getArticlesPageHasMore,
     getArticlesPageIsLoading,
@@ -20,5 +20,5 @@ export const fetchNextArticlesPage = createAsyncThunk<void, void, ThunkConfig<st
             dispatch(articlesPageActions.setPage(page + 1));
             dispatch(fetchArticlesList({}));
         }
-    }
+    },
 );

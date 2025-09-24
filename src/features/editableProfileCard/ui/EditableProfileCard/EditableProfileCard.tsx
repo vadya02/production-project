@@ -1,15 +1,15 @@
-import { Country } from 'entity/Country';
-import { Currency } from 'entity/Currency';
-import { ProfileCard } from 'entity/Profile';
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { VStack } from 'shared/ui/Stack';
-import { Text, TextTheme } from 'shared/ui/Text/Text';
+import { Country } from '@/entity/Country';
+import { Currency } from '@/entity/Currency';
+import { ProfileCard } from '@/entity/Profile';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
+import { VStack } from '@/shared/ui/Stack';
+import { Text, TextTheme } from '@/shared/ui/Text/Text';
 import { ValidateProfileError } from '../../model/consts/consts';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';
 import { getProfileForm } from '../../model/selectors/getProfileForm/getProfileForm';
@@ -51,56 +51,56 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
         (value?: string) => {
             dispatch(profileActions.updateProfile({ first: value || '' }));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onChangeLastname = useCallback(
         (value?: string) => {
             dispatch(profileActions.updateProfile({ lastname: value || '' }));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onChangeCity = useCallback(
         (value?: string) => {
             dispatch(profileActions.updateProfile({ city: value || '' }));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onChangeAge = useCallback(
         (value?: string) => {
             dispatch(profileActions.updateProfile({ age: Number(value || 0) }));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onChangeUsername = useCallback(
         (value?: string) => {
             dispatch(profileActions.updateProfile({ username: value || '' }));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onChangeAvatar = useCallback(
         (value?: string) => {
             dispatch(profileActions.updateProfile({ avatar: value || '' }));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onChangeCurrency = useCallback(
         (currency: Currency) => {
             dispatch(profileActions.updateProfile({ currency }));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onChangeCountry = useCallback(
         (country: Country) => {
             dispatch(profileActions.updateProfile({ country }));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const validateErrorTranslates = {
@@ -115,8 +115,8 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
             <VStack gap="8" max className={classNames(cls.EditableProfileCard, {}, [className])}>
                 <EditableProfileCardHeader />
-                {validateErrors?.length &&
-                    validateErrors.map((err) => (
+                {validateErrors?.length
+                    && validateErrors.map((err) => (
                         <Text
                             key={err}
                             theme={TextTheme.ERROR}

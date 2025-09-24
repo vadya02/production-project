@@ -1,13 +1,13 @@
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import i18n from 'shared/config/i18n/i18n';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { DynamicModuleLoader } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
-import { Input } from 'shared/ui/Input/Input';
-import { Text, TextTheme } from 'shared/ui/Text/Text';
+import i18n from '@/shared/config/i18n/i18n';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { DynamicModuleLoader } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
+import { Input } from '@/shared/ui/Input/Input';
+import { Text, TextTheme } from '@/shared/ui/Text/Text';
 import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
 import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
@@ -37,14 +37,14 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
         (value: string) => {
             dispatch(loginActions.setUsername(value));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onChangePassword = useCallback(
         (value: string) => {
             dispatch(loginActions.setPassword(value));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onLoginClick = useCallback(async () => {

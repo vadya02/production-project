@@ -1,9 +1,11 @@
-import { CombinedState, configureStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit';
-import { counterReducer } from 'entity/Counter';
-import { userReducers } from 'entity/User';
-import { uiReducer } from 'features/UI';
-import { $api } from 'shared/api/api';
-import { rtkApi } from 'shared/api/rtkApi';
+import {
+    CombinedState, configureStore, Reducer, ReducersMapObject,
+} from '@reduxjs/toolkit';
+import { counterReducer } from '@/entity/Counter';
+import { userReducers } from '@/entity/User';
+import { uiReducer } from '@/features/UI';
+import { $api } from '@/shared/api/api';
+import { rtkApi } from '@/shared/api/rtkApi';
 import { StateSchema, ThunkExtraArg } from './StateSchema';
 import { createReducerManager } from './reducerManager';
 
@@ -26,12 +28,11 @@ export function createReduxStore(initialState?: StateSchema, asyncReducers?: Red
         reducer: reducerManager.reduce as Reducer<CombinedState<StateSchema>>,
         devTools: __IS_DEV__,
         preloadedState: initialState,
-        middleware: (getDefaultMiddleware) =>
-            getDefaultMiddleware({
-                thunk: {
-                    extraArgument: extraArg,
-                },
-            }).concat(rtkApi.middleware),
+        middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+            thunk: {
+                extraArgument: extraArg,
+            },
+        }).concat(rtkApi.middleware),
     });
 
     // @ts-ignore

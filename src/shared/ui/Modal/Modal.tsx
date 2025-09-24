@@ -1,7 +1,7 @@
-import { useTheme } from 'app/providers/ThemeProvider';
 import { ReactNode } from 'react';
-import { classNames, Mods } from 'shared/lib/classNames/classNames';
-import { useModal } from 'shared/lib/hooks/useModal/useModal';
+import { useTheme } from '@/app/providers/ThemeProvider';
+import { classNames, Mods } from '@/shared/lib/classNames/classNames';
+import { useModal } from '@/shared/lib/hooks/useModal/useModal';
 import { Overlay } from '../Overlay/ui/Overlay';
 import { Portal } from '../Portal/Portal';
 import cls from './Modal.module.scss';
@@ -17,7 +17,9 @@ interface ModalProps {
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-    const { className, children, isOpen, onClose, lazy } = props;
+    const {
+        className, children, isOpen, onClose, lazy,
+    } = props;
 
     const { close, isClosing, isMounted } = useModal({
         animationDelay: ANIMATION_DELAY,

@@ -1,15 +1,17 @@
-import { AnyAction, EnhancedStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit';
+import {
+    AnyAction, EnhancedStore, Reducer, ReducersMapObject,
+} from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
-import { ArticleDetailsSchema } from 'entity/Article/model/types/articleDetailsSchema';
-import { CounterSchema } from 'entity/Counter';
-import { UserSchema } from 'entity/User';
-import { AddCommentFormSchema } from 'features/addCommentForm';
-import { LoginSchema } from 'features/AuthByUsername/model/types/loginSchema';
-import { ProfileSchema } from 'features/editableProfileCard';
-import { UISchema } from 'features/UI';
-import { ArticleDetailsPageSchema } from 'pages/ArticleDetailsPage';
-import { ArticlesPageSchema } from 'pages/ArticlesPage';
-import { rtkApi } from 'shared/api/rtkApi';
+import { ArticleDetailsSchema } from '@/entity/Article/model/types/articleDetailsSchema';
+import { CounterSchema } from '@/entity/Counter';
+import { UserSchema } from '@/entity/User';
+import { AddCommentFormSchema } from '@/features/addCommentForm';
+import { LoginSchema } from '@/features/AuthByUsername/model/types/loginSchema';
+import { ProfileSchema } from '@/features/editableProfileCard';
+import { UISchema } from '@/features/UI';
+import { ArticleDetailsPageSchema } from '@/pages/ArticleDetailsPage';
+import { ArticlesPageSchema } from '@/pages/ArticlesPage';
+import { rtkApi } from '@/shared/api/rtkApi';
 
 export interface StateSchema {
     counter: CounterSchema;

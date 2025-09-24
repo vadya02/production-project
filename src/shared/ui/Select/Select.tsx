@@ -1,5 +1,5 @@
 import { ChangeEvent, memo, useMemo } from 'react';
-import { classNames, Mods } from 'shared/lib/classNames/classNames';
+import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Select.module.scss';
 
 export interface SelectOption {
@@ -17,7 +17,9 @@ interface SelectProps {
 }
 
 export const Select = memo((props: SelectProps) => {
-    const { className, label, onChange, options, value, readonly } = props;
+    const {
+        className, label, onChange, options, value, readonly,
+    } = props;
 
     const mods: Mods = {};
 

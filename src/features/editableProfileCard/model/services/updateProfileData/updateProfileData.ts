@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ThunkConfig } from 'app/providers/StoreProvider';
-import { Profile } from 'entity/Profile';
+import { ThunkConfig } from '@/app/providers/StoreProvider';
+import { Profile } from '@/entity/Profile';
 import { ValidateProfileError } from '../../consts/consts';
 import { getProfileForm } from '../../selectors/getProfileForm/getProfileForm';
 import { validateProfileData } from '../validateProfileData/validateProfileData';
@@ -30,5 +30,5 @@ export const updateProfileData = createAsyncThunk<Profile, void, ThunkConfig<Val
             console.log(e);
             return rejectWithValue([ValidateProfileError.SERVER_ERROR]);
         }
-    }
+    },
 );

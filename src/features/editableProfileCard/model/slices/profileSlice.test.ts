@@ -1,5 +1,5 @@
-import { Country } from 'entity/Country';
-import { Currency } from 'entity/Currency';
+import { Country } from '@/entity/Country';
+import { Currency } from '@/entity/Currency';
 import { ValidateProfileError } from '../consts/consts';
 import { updateProfileData } from '../services/updateProfileData/updateProfileData';
 import { ProfileSchema } from '../types/editableProfileCardSchema';
@@ -43,8 +43,8 @@ describe('profileSlice.test', () => {
                 state as ProfileSchema,
                 profileActions.updateProfile({
                     username: '123456',
-                })
-            )
+                }),
+            ),
         ).toEqual({
             form: { username: '123456' },
         });

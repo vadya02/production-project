@@ -3,7 +3,9 @@ import { getUserAuthData } from './model/selectors/getUserAuthData/getUserAuthDa
 import { getUserInited } from './model/selectors/getUserInited/getUserInited';
 import { userActions, userReducers } from './model/slices/userSlice';
 
-export { getUserAuthData, getUserInited, userActions, userReducers, UserRole };
+export {
+    getUserAuthData, getUserInited, userActions, userReducers, UserRole,
+};
 
 export { getUserRoles, isUserAdmin, isUserManager } from './model/selectors/roleSelectors';
 

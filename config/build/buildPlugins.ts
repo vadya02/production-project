@@ -8,7 +8,9 @@ import webpack from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 
-export const buildPlugins = ({ paths, isDev, apiUrl, project }: BuildOptions): webpack.WebpackPluginInstance[] => {
+export const buildPlugins = ({
+    paths, isDev, apiUrl, project,
+}: BuildOptions): webpack.WebpackPluginInstance[] => {
     const plugins = [
         new HtmlWebpackPlugin({
             template: paths.html,
@@ -47,7 +49,7 @@ export const buildPlugins = ({ paths, isDev, apiUrl, project }: BuildOptions): w
         plugins.push(
             new BundleAnalyzerPlugin({
                 openAnalyzer: false,
-            })
+            }),
         );
     }
     return plugins;

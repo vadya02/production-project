@@ -12,7 +12,7 @@ describe('classNames', () => {
     });
     test('with mods, additional class', () => {
         expect(classNames('someClass', { hovered: true, static: false }, ['primary'])).toBe(
-            'someClass primary hovered'
+            'someClass primary hovered',
         );
     });
     test('with undefined', () => {

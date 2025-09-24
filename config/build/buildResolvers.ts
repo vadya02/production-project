@@ -7,6 +7,8 @@ export const buildResolvers = (options: BuildOptions): webpack.ResolveOptions =>
     modules: [
         options.paths.src, 'node_modules',
     ],
-    alias: {},
+    alias: {
+        '@': options.paths.src,
+    },
     mainFiles: ['index'],
 });
