@@ -5,7 +5,7 @@ import { addCommentFormReducer } from 'features/addCommentForm/model/slices/addC
 import { loginReducer } from 'features/AuthByUsername/model/slices/loginSlice';
 import { profileReducer } from 'features/editableProfileCard/model/slices/profileSlice';
 import { articleDetailsPageReducer } from 'pages/ArticleDetailsPage/model/slices';
-import { ReducersList } from 'shared/lib/components/DynamicModuleLoader';
+import { ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 
 const defaultAcyncReducers: ReducersList = {
     loginForm: loginReducer,

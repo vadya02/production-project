@@ -9,9 +9,7 @@ export const buildWebpackConfig = (options: BuildOptions): webpack.Configuration
     const { mode, paths } = options;
     return {
         mode,
-        entry: {
-            random_entry: paths.entry,
-        },
+        entry: paths.entry,
         output: {
             filename: '[name].[contenthash].js',
             path: paths.build,
