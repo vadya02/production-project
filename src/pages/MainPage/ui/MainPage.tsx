@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page/Page';
+import { RatingCard } from '@/entity/Rating';
 
 export default function MainPage() {
     const { t } = useTranslation();
@@ -10,5 +11,6 @@ export default function MainPage() {
         setValue(val);
     };
 
-    return <Page>{t('Главная страница')}</Page>;
+    return <Page>{t('Главная страница')}
+    <RatingCard title='555' feedbackTitle='555' hasFeedback/></Page>;
 }
