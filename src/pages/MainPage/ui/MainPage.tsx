@@ -11,6 +11,10 @@ export default function MainPage() {
         setValue(val);
     };
 
-    return <Page>{t('Главная страница')}
-    <RatingCard title='555' feedbackTitle='555' hasFeedback/></Page>;
+    return (
+        <Page>
+            {t('Главная страница')}
+            <RatingCard title="555" feedbackTitle="555" hasFeedback />
+        </Page>
+    );
 }
