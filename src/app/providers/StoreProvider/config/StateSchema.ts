@@ -2,11 +2,11 @@ import {
     AnyAction, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
-import { ArticleDetailsSchema } from '@/entity/Article/model/types/articleDetailsSchema';
+import { ArticleDetailsSchema } from '@/entity/Article';
 import { CounterSchema } from '@/entity/Counter';
 import { UserSchema } from '@/entity/User';
 import { AddCommentFormSchema } from '@/features/addCommentForm';
-import { LoginSchema } from '@/features/AuthByUsername/model/types/loginSchema';
+import { LoginSchema } from '@/features/AuthByUsername';
 import { ProfileSchema } from '@/features/editableProfileCard';
 import { UISchema } from '@/features/UI';
 import { ArticleDetailsPageSchema } from '@/pages/ArticleDetailsPage';
