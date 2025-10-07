@@ -1,5 +1,6 @@
 import {
     ButtonHTMLAttributes, FC, memo, ReactElement,
+    ReactNode,
 } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
@@ -25,7 +26,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     square?: boolean;
     size?: string;
     disabled?: boolean;
-    children?: ReactElement;
+    children?: ReactNode;
     fullWidth?: boolean;
 }
 
