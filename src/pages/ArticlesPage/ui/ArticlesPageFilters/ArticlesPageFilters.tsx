@@ -2,10 +2,8 @@ import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import {
-    ArticleSortField, ArticleSortSelector, ArticleType, ArticleView,
+    ArticleSortField, ArticleSortSelector, ArticleType, ArticleView, ArticleTypeTabs, ArticleViewSelector,
 } from '@/entity/Article';
-import { ArticleTypeTabs } from '@/entity/Article/ui/ArticleTypeTabs/ArticleTypeTabs';
-import { ArticleViewSelector } from '@/entity/Article/ui/ArticleViewSelector/ArticleViewSelector';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useDebounce } from '@/shared/lib/hooks/useDebounce/useDebounce';

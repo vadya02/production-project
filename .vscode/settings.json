@@ -3,5 +3,7 @@
     "public/locales",
     "src/shared/config/i18n"
   ],
-  "i18n-ally.keystyle": "flat"
+  "i18n-ally.keystyle": "flat",
+  "eslint.experimental.useFlatConfig": false,
+  "eslint.runtime": "node"
 }

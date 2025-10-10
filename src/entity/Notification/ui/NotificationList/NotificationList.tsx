@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { useNotifications } from '@/entity/Notification/api/notificationApi';
+import { useNotifications } from '@/entity/Notification';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 import { VStack } from '@/shared/ui/Stack';
