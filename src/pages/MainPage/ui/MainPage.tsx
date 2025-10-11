@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page';
-import { RatingCard } from '@/entity/Rating';
+import { RatingCard } from '@/entities/Rating';
 
 export default function MainPage() {
     const { t } = useTranslation();
