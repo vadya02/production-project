@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
 import {
-    ButtonHTMLAttributes, FC, memo, ReactElement,
+    ButtonHTMLAttributes, FC, memo,
     ReactNode,
 } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
-import { LangSwitcher } from '@/features/LangSwitcher';
 
 export enum ButtonTheme {
     CLEAR = 'clear',
