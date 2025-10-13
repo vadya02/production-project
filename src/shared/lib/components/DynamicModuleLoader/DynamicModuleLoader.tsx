@@ -3,6 +3,7 @@ import { ReactNode, useEffect } from 'react';
 import { useDispatch, useStore } from 'react-redux';
 import { ReduxStoreWithManager, StateSchema, StateSchemakey } from '@/app/providers/StoreProvider/config/StateSchema';
 
+
 export type ReducersList = {
     [name in StateSchemakey]?: Reducer<NonNullable<StateSchema[name]>>;
 };
