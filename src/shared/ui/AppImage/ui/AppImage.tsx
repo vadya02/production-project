@@ -2,10 +2,8 @@ import { ImgHTMLAttributes, ReactElement, useLayoutEffect, useState } from 'reac
 
 interface AppImageProps extends ImgHTMLAttributes<HTMLImageElement> {
     className?: string;
-    src?: string;
     fallback?: ReactElement;
     errorFallback?: ReactElement;
-    alt?: string;
 }
 
 export const AppImage = (props: AppImageProps) => {
@@ -24,11 +22,11 @@ export const AppImage = (props: AppImageProps) => {
         };
     }, [src]);
 
-    if (isLoading) {
+    if (isLoading && fallback) {
         return fallback;
     }
 
-    if (hasError) {
+    if (hasError && errorFallback) {
         return errorFallback;
     }
 

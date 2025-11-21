@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1760248775872" clover="3.2.0">
-  <project timestamp="1760248775872" name="All files">
-    <metrics statements="623" coveredstatements="407" conditionals="223" coveredconditionals="108" methods="209" coveredmethods="109" elements="1055" coveredelements="624" complexity="0" loc="623" ncloc="623" packages="104" files="120" classes="120"/>
+<coverage generated="1763733146137" clover="3.2.0">
+  <project timestamp="1763733146137" name="All files">
+    <metrics statements="638" coveredstatements="281" conditionals="226" coveredconditionals="41" methods="218" coveredmethods="70" elements="1082" coveredelements="392" complexity="0" loc="638" ncloc="638" packages="99" files="123" classes="123"/>
     <package name="config.jest">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="jestEmptyComponent.tsx" path="/Users/vadin/Desktop/course/production-project/config/jest/jestEmptyComponent.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="8" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.app.providers.StoreProvider">
@@ -17,54 +17,91 @@
       </file>
     </package>
     <package name="src.app.providers.StoreProvider.config">
-      <metrics statements="31" coveredstatements="26" conditionals="10" coveredconditionals="8" methods="9" coveredmethods="8"/>
+      <metrics statements="31" coveredstatements="14" conditionals="10" coveredconditionals="1" methods="9" coveredmethods="4"/>
       <file name="reducerManager.ts" path="/Users/vadin/Desktop/course/production-project/src/app/providers/StoreProvider/config/reducerManager.ts">
-        <metrics statements="24" coveredstatements="19" conditionals="10" coveredconditionals="8" methods="7" coveredmethods="6"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="12" count="9" type="stmt"/>
-        <line num="14" count="9" type="stmt"/>
-        <line num="15" count="9" type="stmt"/>
-        <line num="17" count="9" type="stmt"/>
+        <metrics statements="24" coveredstatements="7" conditionals="10" coveredconditionals="1" methods="7" coveredmethods="2"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="21" count="49" type="cond" truecount="2" falsecount="0"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="28" count="49" type="stmt"/>
-        <line num="31" count="4" type="cond" truecount="3" falsecount="1"/>
-        <line num="32" count="4" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="32" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
-        <line num="40" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="41" count="0" type="stmt"/>
-        <line num="43" count="4" type="stmt"/>
-        <line num="44" count="4" type="stmt"/>
-        <line num="45" count="4" type="stmt"/>
-        <line num="47" count="4" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
       </file>
       <file name="store.ts" path="/Users/vadin/Desktop/course/production-project/src/app/providers/StoreProvider/config/store.ts">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="13" count="9" type="stmt"/>
-        <line num="21" count="9" type="stmt"/>
-        <line num="23" count="9" type="stmt"/>
-        <line num="27" count="9" type="stmt"/>
-        <line num="31" count="9" type="stmt"/>
-        <line num="39" count="9" type="stmt"/>
-        <line num="41" count="9" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.app.providers.StoreProvider.ui">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="StoreProvider.tsx" path="/Users/vadin/Desktop/course/production-project/src/app/providers/StoreProvider/ui/StoreProvider.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app.providers.router.config">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="routeConfig.tsx" path="/Users/vadin/Desktop/course/production-project/src/app/providers/router/config/routeConfig.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app.providers.router.ui">
+      <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="6"/>
+      <file name="AppRouter.tsx" path="/Users/vadin/Desktop/course/production-project/src/app/providers/router/ui/AppRouter.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="50" type="stmt"/>
+        <line num="15" count="50" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="26" count="50" type="stmt"/>
+      </file>
+      <file name="RequireAuth.tsx" path="/Users/vadin/Desktop/course/production-project/src/app/providers/router/ui/RequireAuth.tsx">
+        <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
         <line num="13" count="3" type="stmt"/>
-        <line num="14" count="10" type="stmt"/>
-        <line num="18" count="9" type="stmt"/>
-        <line num="24" count="9" type="stmt"/>
-        <line num="26" count="9" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="28" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Article">
@@ -80,53 +117,53 @@
       </file>
     </package>
     <package name="src.entities.Article.model.selectors">
-      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="articleDetails.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/model/selectors/articleDetails.ts">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="3" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="3" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Article.model.services.fetchArticleById">
-      <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <metrics statements="11" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="fetchArticleById.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/model/services/fetchArticleById/fetchArticleById.ts">
-        <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="cond" truecount="1" falsecount="1"/>
+        <metrics statements="11" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Article.model.slice">
-      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="11" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="articleDetailsSlice.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/model/slice/articleDetailsSlice.ts">
-        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="33" count="3" type="stmt"/>
-        <line num="34" count="3" type="stmt"/>
+        <metrics statements="11" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Article.ui.ArticleCodeBlockComponent">
       <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="ArticleCodeBlockComponent.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleCodeBlockComponent/ArticleCodeBlockComponent.tsx">
         <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
@@ -135,8 +172,8 @@
       <metrics statements="23" coveredstatements="2" conditionals="10" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="ArticleDetails.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleDetails/ArticleDetails.tsx">
         <metrics statements="23" coveredstatements="2" conditionals="10" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
@@ -164,7 +201,7 @@
       <metrics statements="3" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="ArticleImageBlockComponent.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleImageBlockComponent/ArticleImageBlockComponent.tsx">
         <metrics statements="3" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
@@ -173,9 +210,9 @@
       <metrics statements="9" coveredstatements="2" conditionals="9" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="ArticleList.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleList/ArticleList.tsx">
         <metrics statements="9" coveredstatements="2" conditionals="9" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="19" count="2" type="cond" truecount="0" falsecount="2"/>
+        <line num="19" count="1" type="cond" truecount="0" falsecount="2"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="35" count="0" type="cond" truecount="0" falsecount="4"/>
@@ -188,7 +225,7 @@
       <metrics statements="14" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="ArticleListItem.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleListItem/ArticleListItem.tsx">
         <metrics statements="9" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
@@ -196,70 +233,25 @@
         <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="40" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
       </file>
       <file name="ArticleListItemSkeleton.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleListItem/ArticleListItemSkeleton.tsx">
         <metrics statements="5" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="13" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="17" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.entities.Article.ui.ArticleSortSelector">
-      <metrics statements="12" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="ArticleSortSelector.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleSortSelector/ArticleSortSelector.tsx">
-        <metrics statements="12" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-      </file>
-    </package>
     <package name="src.entities.Article.ui.ArticleTextBlockComponent">
       <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="ArticleTextBlockComponent.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleTextBlockComponent/ArticleTextBlockComponent.tsx">
         <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.entities.Article.ui.ArticleTypeTabs">
-      <metrics statements="8" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="ArticleTypeTabs.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleTypeTabs/ArticleTypeTabs.tsx">
-        <metrics statements="8" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.entities.Article.ui.ArticleViewSelector">
-      <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="ArticleViewSelector.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Article/ui/ArticleViewSelector/ArticleViewSelector.tsx">
-        <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Counter">
@@ -268,117 +260,71 @@
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.entities.Counter.model.selectors.getCounter">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getCounter.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Counter/model/selectors/getCounter/getCounter.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="9" type="stmt"/>
-      </file>
-    </package>
     <package name="src.entities.Counter.model.selectors.getCounterValue">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="getCounterValue.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Counter/model/selectors/getCounterValue/getCounterValue.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="7" count="6" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Counter.model.slice">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <metrics statements="6" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="counterSlice.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Counter/model/slice/counterSlice.ts">
-        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
+        <metrics statements="6" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
-        <line num="30" count="4" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Counter.ui">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="11" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="Counter.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Counter/ui/Counter.tsx">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="5" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
+        <metrics statements="11" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.entities.Country">
+    <package name="src.entities.Rating">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Country/index.ts">
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Rating/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.entities.Country.model.types">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="country.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Country/model/types/country.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="src.entities.Country.ui">
-      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="CountrySelect.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Country/ui/CountrySelect.tsx">
-        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
-        <line num="24" count="11" type="stmt"/>
-        <line num="26" count="11" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="33" count="11" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.entities.Currency">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Currency/index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="src.entities.Currency.model.types">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="currency.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Currency/model/types/currency.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="src.entities.Currency.ui.CurrencySelect">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="CurrencySelect.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Currency/ui/CurrencySelect/CurrencySelect.tsx">
-        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="19" count="7" type="stmt"/>
-        <line num="22" count="12" type="stmt"/>
-        <line num="23" count="11" type="stmt"/>
-        <line num="24" count="11" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="28" count="11" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.entities.Profile">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/Profile/index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="src.entities.Profile.ui.ProfileCard">
-      <metrics statements="9" coveredstatements="8" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="ProfileCard.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Profile/ui/ProfileCard/ProfileCard.tsx">
-        <metrics statements="9" coveredstatements="8" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="44" count="29" type="stmt"/>
-        <line num="45" count="28" type="stmt"/>
-        <line num="47" count="28" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="2" type="stmt"/>
-        <line num="55" count="26" type="cond" truecount="1" falsecount="1"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="68" count="26" type="stmt"/>
-        <line num="72" count="26" type="stmt"/>
+    <package name="src.entities.Rating.ui.Rating">
+      <metrics statements="19" coveredstatements="11" conditionals="5" coveredconditionals="2" methods="4" coveredmethods="1"/>
+      <file name="RatingCard.tsx" path="/Users/vadin/Desktop/course/production-project/src/entities/Rating/ui/Rating/RatingCard.tsx">
+        <metrics statements="19" coveredstatements="11" conditionals="5" coveredconditionals="2" methods="4" coveredmethods="1"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.User">
@@ -394,34 +340,34 @@
       </file>
     </package>
     <package name="src.entities.User.model.selectors">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="roleSelectors.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/User/model/selectors/roleSelectors.ts">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="7" count="5" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.User.model.selectors.getUserAuthData">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getUserAuthData.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/User/model/selectors/getUserAuthData/getUserAuthData.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="66" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.User.model.selectors.getUserInited">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="getUserInited.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/User/model/selectors/getUserInited/getUserInited.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="3" count="5" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.User.model.slices">
       <metrics statements="11" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="userSlice.ts" path="/Users/vadin/Desktop/course/production-project/src/entities/User/model/slices/userSlice.ts">
         <metrics statements="11" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -429,102 +375,8 @@
         <line num="21" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.features.AuthByUsername.model.selectors.getLoginError">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getLoginError.ts" path="/Users/vadin/Desktop/course/production-project/src/features/AuthByUsername/model/selectors/getLoginError/getLoginError.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.features.AuthByUsername.model.selectors.getLoginIsLoading">
-      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="getLoginIsLoading.ts" path="/Users/vadin/Desktop/course/production-project/src/features/AuthByUsername/model/selectors/getLoginIsLoading/getLoginIsLoading.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
-      </file>
-    </package>
-    <package name="src.features.AuthByUsername.model.selectors.getLoginPassword">
-      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="getLoginPassword.ts" path="/Users/vadin/Desktop/course/production-project/src/features/AuthByUsername/model/selectors/getLoginPassword/getLoginPassword.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
-      </file>
-    </package>
-    <package name="src.features.AuthByUsername.model.selectors.getLoginUsername">
-      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="getLoginUsername.ts" path="/Users/vadin/Desktop/course/production-project/src/features/AuthByUsername/model/selectors/getLoginUsername/getLoginUsername.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
-      </file>
-    </package>
-    <package name="src.features.AuthByUsername.model.services.loginByUsername">
-      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="loginByUsername.ts" path="/Users/vadin/Desktop/course/production-project/src/features/AuthByUsername/model/services/loginByUsername/loginByUsername.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.features.AuthByUsername.model.slices">
-      <metrics statements="12" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
-      <file name="loginSlice.ts" path="/Users/vadin/Desktop/course/production-project/src/features/AuthByUsername/model/slices/loginSlice.ts">
-        <metrics statements="12" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.features.LangSwitcher">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/features/LangSwitcher/index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="src.features.LangSwitcher.ui">
-      <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
-      <file name="LangSwitcher.tsx" path="/Users/vadin/Desktop/course/production-project/src/features/LangSwitcher/ui/LangSwitcher.tsx">
-        <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="17" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.features.ThemeSwitcher">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/features/ThemeSwitcher/index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="src.features.ThemeSwitcher.ui">
-      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="ThemeSwitcher.tsx" path="/Users/vadin/Desktop/course/production-project/src/features/ThemeSwitcher/ui/ThemeSwitcher.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.features.UI">
@@ -534,235 +386,181 @@
       </file>
     </package>
     <package name="src.features.UI.model.selectors">
-      <metrics statements="4" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="ui.ts" path="/Users/vadin/Desktop/course/production-project/src/features/UI/model/selectors/ui.ts">
-        <metrics statements="4" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="src.features.UI.model.slices">
       <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="UISlice.ts" path="/Users/vadin/Desktop/course/production-project/src/features/UI/model/slices/UISlice.ts">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.consts">
+    <package name="src.pages.AboutPage">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="consts.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/consts/consts.ts">
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/AboutPage/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.selectors.getProfileData">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getProfileData.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/selectors/getProfileData/getProfileData.ts">
+    <package name="src.pages.AboutPage.ui">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="About.async.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/AboutPage/ui/About.async.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="62" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="AboutPage.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/AboutPage/ui/AboutPage.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.selectors.getProfileError">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getProfileError.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/selectors/getProfileError/getProfileError.ts">
+    <package name="src.pages.AdminPanelPage">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/AdminPanelPage/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.pages.AdminPanelPage.ui">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="AdminPanelPage.async.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/AdminPanelPage/ui/AdminPanelPage.async.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="62" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="AdminPanelPage.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/AdminPanelPage/ui/AdminPanelPage.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.selectors.getProfileForm">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getProfileForm.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/selectors/getProfileForm/getProfileForm.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="51" type="stmt"/>
+    <package name="src.pages.ArticleDetailsPage">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleDetailsPage/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.selectors.getProfileIsLoading">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getProfileIsLoading.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/selectors/getProfileIsLoading/getProfileIsLoading.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="58" type="stmt"/>
+    <package name="src.pages.ArticleDetailsPage.model.services.fetchArticleRecommendations">
+      <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="fetchArticleRecommendations.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleDetailsPage/model/services/fetchArticleRecommendations/fetchArticleRecommendations.ts">
+        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.selectors.getProfileReadonly">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getProfileReadonly.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/selectors/getProfileReadonly/getProfileReadonly.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="112" type="stmt"/>
+    <package name="src.pages.ArticleDetailsPage.model.services.fetchCommentsByArticleId">
+      <metrics statements="11" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="fetchCommentsByArticleId.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId.ts">
+        <metrics statements="11" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.selectors.getProfileValidateErrors">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getProfileValidateErrors.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/selectors/getProfileValidateErrors/getProfileValidateErrors.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="60" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.features.editableProfileCard.model.services.fetchProfileData">
-      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="fetchProfileData.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/services/fetchProfileData/fetchProfileData.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.features.editableProfileCard.model.services.updateProfileData">
-      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="updateProfileData.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/services/updateProfileData/updateProfileData.ts">
-        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="15" count="5" type="stmt"/>
-        <line num="17" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="24" count="2" type="cond" truecount="2" falsecount="0"/>
+    <package name="src.pages.ArticleDetailsPage.model.slices">
+      <metrics statements="27" coveredstatements="11" conditionals="4" coveredconditionals="0" methods="12" coveredmethods="2"/>
+      <file name="articleDetailsCommentsSlice.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleDetailsPage/model/slices/articleDetailsCommentsSlice.ts">
+        <metrics statements="13" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+      <file name="articleDetailsPageRecommendationsSlice.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleDetailsPage/model/slices/articleDetailsPageRecommendationsSlice.ts">
+        <metrics statements="13" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleDetailsPage/model/slices/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.services.validateProfileData">
-      <metrics statements="12" coveredstatements="11" conditionals="12" coveredconditionals="11" methods="1" coveredmethods="1"/>
-      <file name="validateProfileData.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/services/validateProfileData/validateProfileData.ts">
-        <metrics statements="12" coveredstatements="11" conditionals="12" coveredconditionals="11" methods="1" coveredmethods="1"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="10" type="cond" truecount="1" falsecount="1"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="11" count="10" type="stmt"/>
-        <line num="13" count="10" type="stmt"/>
-        <line num="15" count="10" type="cond" truecount="4" falsecount="0"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="19" count="10" type="cond" truecount="4" falsecount="0"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="23" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="27" count="10" type="stmt"/>
+    <package name="src.pages.ArticleDetailsPage.ui.ArticleDetailsPage">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="ArticleDetailsPage.async.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleDetailsPage/ui/ArticleDetailsPage/ArticleDetailsPage.async.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.model.slices">
-      <metrics statements="26" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="7"/>
-      <file name="profileSlice.ts" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/model/slices/profileSlice.ts">
-        <metrics statements="26" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="7"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="28" count="16" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="50" count="3" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="56" count="1" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="61" count="2" type="stmt"/>
-        <line num="62" count="2" type="stmt"/>
-        <line num="68" count="2" type="stmt"/>
-        <line num="69" count="2" type="stmt"/>
+    <package name="src.pages.ArticleEditPage">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleEditPage/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.ui.EditableProfileCard">
-      <metrics statements="33" coveredstatements="24" conditionals="16" coveredconditionals="6" methods="11" coveredmethods="4"/>
-      <file name="EditableProfileCard.tsx" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/ui/EditableProfileCard/EditableProfileCard.tsx">
-        <metrics statements="33" coveredstatements="24" conditionals="16" coveredconditionals="6" methods="11" coveredmethods="4"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="29" type="stmt"/>
-        <line num="35" count="28" type="stmt"/>
-        <line num="36" count="28" type="stmt"/>
-        <line num="37" count="28" type="stmt"/>
-        <line num="38" count="28" type="stmt"/>
-        <line num="39" count="28" type="stmt"/>
-        <line num="40" count="28" type="stmt"/>
-        <line num="41" count="28" type="stmt"/>
-        <line num="43" count="28" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="50" count="28" type="stmt"/>
-        <line num="52" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="57" count="28" type="stmt"/>
-        <line num="59" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="64" count="28" type="stmt"/>
-        <line num="66" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="71" count="28" type="stmt"/>
-        <line num="73" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="78" count="28" type="stmt"/>
-        <line num="80" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="85" count="28" type="stmt"/>
-        <line num="87" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="92" count="28" type="stmt"/>
-        <line num="94" count="0" type="stmt"/>
-        <line num="99" count="28" type="stmt"/>
-        <line num="101" count="0" type="stmt"/>
-        <line num="106" count="28" type="stmt"/>
-        <line num="114" count="28" type="stmt"/>
-        <line num="120" count="2" type="stmt"/>
+    <package name="src.pages.ArticleEditPage.ui.ArticleEditPage">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="ArticleEditPage.async.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticleEditPage/ui/ArticleEditPage/ArticleEditPage.async.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.features.editableProfileCard.ui.EditableProfileCardHeader">
-      <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
-      <file name="EditableProfileCardHeader.tsx" path="/Users/vadin/Desktop/course/production-project/src/features/editableProfileCard/ui/EditableProfileCardHeader/EditableProfileCardHeader.tsx">
-        <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="28" type="stmt"/>
-        <line num="22" count="28" type="stmt"/>
-        <line num="23" count="28" type="stmt"/>
-        <line num="24" count="28" type="stmt"/>
-        <line num="25" count="28" type="stmt"/>
-        <line num="26" count="28" type="stmt"/>
-        <line num="27" count="28" type="stmt"/>
-        <line num="29" count="28" type="stmt"/>
-        <line num="30" count="4" type="stmt"/>
-        <line num="33" count="28" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="37" count="28" type="stmt"/>
-        <line num="38" count="2" type="stmt"/>
-        <line num="41" count="28" type="stmt"/>
+    <package name="src.pages.ArticlesPage">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticlesPage/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.pages.ArticlesPage.model.selectors">
-      <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="1" methods="11" coveredmethods="3"/>
+      <metrics statements="11" coveredstatements="11" conditionals="14" coveredconditionals="0" methods="11" coveredmethods="0"/>
       <file name="articlesPageSelectors.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticlesPage/model/selectors/articlesPageSelectors.ts">
-        <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="1" methods="11" coveredmethods="3"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="10" count="2" type="cond" truecount="0" falsecount="2"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="cond" truecount="0" falsecount="2"/>
-        <line num="14" count="2" type="cond" truecount="0" falsecount="2"/>
-        <line num="15" count="2" type="cond" truecount="0" falsecount="2"/>
-        <line num="16" count="2" type="cond" truecount="0" falsecount="2"/>
+        <metrics statements="11" coveredstatements="11" conditionals="14" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="16" count="1" type="cond" truecount="0" falsecount="2"/>
       </file>
     </package>
     <package name="src.pages.ArticlesPage.model.services.fetchArticlesList">
@@ -784,20 +582,6 @@
         <line num="49" count="0" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
         <line num="54" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.pages.ArticlesPage.model.services.fetchNextArticlesPage">
-      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="fetchNextArticlesPage.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticlesPage/model/services/fetchNextArticlesPage/fetchNextArticlesPage.ts">
-        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="19" count="2" type="cond" truecount="4" falsecount="0"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.pages.ArticlesPage.model.slices">
@@ -835,79 +619,180 @@
         <line num="90" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="src.pages.ArticlesPage.ui.ArticlesPage">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="ArticlesPage.async.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/ArticlesPage/ui/ArticlesPage/ArticlesPage.async.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.ForbiddenPage">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ForbiddenPage/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.pages.ForbiddenPage.ui">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ForbiddenPage.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/ForbiddenPage/ui/ForbiddenPage.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.MainPage">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/MainPage/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.pages.MainPage.ui">
+      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <file name="MainPage.async.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/MainPage/ui/MainPage.async.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="MainPage.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/MainPage/ui/MainPage.tsx">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.NotFoundPage">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/NotFoundPage/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.pages.NotFoundPage.ui">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="NotFoundPage.tsx" path="/Users/vadin/Desktop/course/production-project/src/pages/NotFoundPage/ui/NotFoundPage.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.ProfilePages">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ProfilePages/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.pages.ProfilePages.ui">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="ProfilePage.async.ts" path="/Users/vadin/Desktop/course/production-project/src/pages/ProfilePages/ui/ProfilePage.async.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="src.shared.api">
-      <metrics statements="11" coveredstatements="7" conditionals="8" coveredconditionals="3" methods="3" coveredmethods="2"/>
+      <metrics statements="11" coveredstatements="4" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="api.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/api/api.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="10" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="1" type="stmt"/>
+        <metrics statements="5" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="stmt"/>
       </file>
       <file name="rtkApi.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/api/rtkApi.ts">
         <metrics statements="6" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
         <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.config.i18n">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="i18nForTests.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/config/i18n/i18nForTests.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.const">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="9"/>
       <file name="localstorage.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/const/localstorage.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="6" type="stmt"/>
-        <line num="2" count="6" type="stmt"/>
-        <line num="3" count="6" type="stmt"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
       </file>
       <file name="router.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/const/router.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="15" count="3" type="stmt"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="9"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
       </file>
       <file name="theme.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/const/theme.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.shared.lib.classNames">
-      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="classNames.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/classNames/classNames.ts">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="8" count="455" type="stmt"/>
-        <line num="12" count="468" type="stmt"/>
-        <line num="13" count="251" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="8" count="21" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.lib.components.AnimationProvider">
+      <metrics statements="16" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="AnimationProvider.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/components/AnimationProvider/AnimationProvider.tsx">
+        <metrics statements="16" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.lib.components.DynamicModuleLoader">
-      <metrics statements="17" coveredstatements="17" conditionals="5" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <metrics statements="17" coveredstatements="1" conditionals="5" coveredconditionals="0" methods="5" coveredmethods="0"/>
       <file name="DynamicModuleLoader.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader.tsx">
-        <metrics statements="17" coveredstatements="17" conditionals="5" coveredconditionals="2" methods="5" coveredmethods="5"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="29" type="cond" truecount="0" falsecount="1"/>
-        <line num="19" count="28" type="stmt"/>
-        <line num="20" count="28" type="stmt"/>
-        <line num="22" count="28" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
-        <line num="25" count="4" type="stmt"/>
-        <line num="28" count="4" type="stmt"/>
-        <line num="29" count="4" type="stmt"/>
-        <line num="30" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="31" count="4" type="stmt"/>
-        <line num="32" count="4" type="stmt"/>
-        <line num="33" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="4" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="42" count="28" type="stmt"/>
+        <metrics statements="17" coveredstatements="1" conditionals="5" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.lib.context">
@@ -921,24 +806,72 @@
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="useAppDispatch.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/hooks/useAppDispatch/useAppDispatch.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="56" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.lib.hooks.useInfiniteScroll">
+      <metrics statements="14" coveredstatements="8" conditionals="8" coveredconditionals="3" methods="4" coveredmethods="3"/>
+      <file name="useInfiniteScroll.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/hooks/useInfiniteScroll/useInfiniteScroll.ts">
+        <metrics statements="14" coveredstatements="8" conditionals="8" coveredconditionals="3" methods="4" coveredmethods="3"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="33" count="3" type="cond" truecount="2" falsecount="2"/>
+        <line num="34" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.lib.hooks.useInitialEffect">
       <metrics statements="3" coveredstatements="2" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <file name="useInitialEffect.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/hooks/useInitialEffect/useInitialEffect.ts">
         <metrics statements="3" coveredstatements="2" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
-        <line num="4" count="28" type="stmt"/>
-        <line num="5" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="cond" truecount="3" falsecount="1"/>
         <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.lib.hooks.useModal">
+      <metrics statements="22" coveredstatements="13" conditionals="8" coveredconditionals="2" methods="7" coveredmethods="4"/>
+      <file name="useModal.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/hooks/useModal/useModal.tsx">
+        <metrics statements="22" coveredstatements="13" conditionals="8" coveredconditionals="2" methods="7" coveredmethods="4"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.lib.hooks.useTheme">
       <metrics statements="14" coveredstatements="3" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="1"/>
       <file name="useTheme.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/hooks/useTheme/useTheme.ts">
         <metrics statements="14" coveredstatements="3" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="1"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
         <line num="17" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="19" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
@@ -950,92 +883,141 @@
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.shared.lib.tests.TestAsyncThunk">
-      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <file name="TestAsyncThunk.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/tests/TestAsyncThunk/TestAsyncThunk.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="25" count="11" type="stmt"/>
-        <line num="26" count="11" type="stmt"/>
-        <line num="27" count="11" type="stmt"/>
-        <line num="29" count="11" type="stmt"/>
-        <line num="30" count="11" type="stmt"/>
-        <line num="34" count="11" type="stmt"/>
-        <line num="35" count="11" type="stmt"/>
-        <line num="40" count="11" type="stmt"/>
+    <package name="src.shared.lib.hooks.useThrottle">
+      <metrics statements="7" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="useThrottle.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/hooks/useThrottle/useThrottle.ts">
+        <metrics statements="7" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.lib.store">
+      <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+      <file name="buildSelector.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/store/buildSelector.ts">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="buildSlice.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/store/buildSlice.ts">
+        <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/store/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.shared.lib.tests.componentRender">
-      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="componentRender.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/tests/componentRender/componentRender.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="16" count="9" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="9" type="stmt"/>
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="16" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="18" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.lib.url.addQueryParams">
-      <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+      <metrics statements="6" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="addQueryParams.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/lib/url/addQueryParams/addQueryParams.ts">
-        <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
+        <metrics statements="6" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
       </file>
     </package>
+    <package name="src.shared.ui.AppImage">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/AppImage/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.shared.ui.AppImage.ui">
+      <metrics statements="16" coveredstatements="1" conditionals="10" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="AppImage.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/AppImage/ui/AppImage.tsx">
+        <metrics statements="16" coveredstatements="1" conditionals="10" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+      </file>
+    </package>
     <package name="src.shared.ui.AppLink">
-      <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="AppLink.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/AppLink/AppLink.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="17" count="10" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
-        <line num="25" count="6" type="stmt"/>
+        <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/AppLink/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.shared.ui.Avatar">
-      <metrics statements="6" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="8" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="Avatar.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Avatar/Avatar.tsx">
-        <metrics statements="6" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="12" count="3" type="stmt"/>
+        <metrics statements="8" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="17" count="1" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Avatar/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.shared.ui.Button">
-      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="Button.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Button/Button.tsx">
-        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="52" count="12" type="stmt"/>
-        <line num="62" count="56" type="stmt"/>
-        <line num="64" count="55" type="stmt"/>
-        <line num="71" count="55" type="stmt"/>
+        <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Button/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.shared.ui.Card">
-      <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="Card.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Card/Card.tsx">
-        <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Card/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -1045,7 +1027,7 @@
       <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="Code.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Code/Code.tsx">
         <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="12" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
@@ -1055,42 +1037,86 @@
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
+    <package name="src.shared.ui.Drawer">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Drawer/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.shared.ui.Drawer.ui">
+      <metrics statements="32" coveredstatements="4" conditionals="18" coveredconditionals="0" methods="10" coveredmethods="0"/>
+      <file name="Drawer.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Drawer/ui/Drawer.tsx">
+        <metrics statements="32" coveredstatements="4" conditionals="18" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="54" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="55" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="72" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="76" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="97" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+      </file>
+    </package>
     <package name="src.shared.ui.Icon">
-      <metrics statements="3" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="Icon.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Icon/Icon.tsx">
-        <metrics statements="3" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="15" count="5" type="cond" truecount="1" falsecount="1"/>
       </file>
       <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Icon/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.shared.ui.Input">
-      <metrics statements="20" coveredstatements="18" conditionals="11" coveredconditionals="10" methods="6" coveredmethods="6"/>
+      <metrics statements="20" coveredstatements="1" conditionals="11" coveredconditionals="0" methods="6" coveredmethods="0"/>
       <file name="Input.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Input/Input.tsx">
-        <metrics statements="20" coveredstatements="18" conditionals="11" coveredconditionals="10" methods="6" coveredmethods="6"/>
+        <metrics statements="20" coveredstatements="1" conditionals="11" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="27" count="108" type="stmt"/>
-        <line num="28" count="108" type="stmt"/>
-        <line num="29" count="108" type="stmt"/>
-        <line num="30" count="108" type="stmt"/>
-        <line num="33" count="108" type="stmt"/>
-        <line num="34" count="36" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="35" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="40" count="108" type="cond" truecount="2" falsecount="0"/>
-        <line num="42" count="108" type="stmt"/>
-        <line num="43" count="15" type="stmt"/>
-        <line num="44" count="15" type="stmt"/>
-        <line num="48" count="108" type="stmt"/>
-        <line num="49" count="6" type="stmt"/>
-        <line num="53" count="108" type="stmt"/>
-        <line num="54" count="6" type="stmt"/>
-        <line num="57" count="108" type="stmt"/>
-        <line num="58" count="15" type="cond" truecount="2" falsecount="0"/>
-        <line num="61" count="108" type="stmt"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="61" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Input/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -1107,81 +1133,51 @@
       <file name="Loader.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Loader/ui/Loader.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="src.shared.ui.Popups">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Popups/index.ts">
+    <package name="src.shared.ui.Modal">
+      <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="Modal.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Modal/Modal.tsx">
+        <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Modal/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.shared.ui.Popups.components.Dropdown">
-      <metrics statements="8" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="Dropdown.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Popups/components/Dropdown/Dropdown.tsx">
-        <metrics statements="8" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
+    <package name="src.shared.ui.Overlay.ui">
+      <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Overlay.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Overlay/ui/Overlay.tsx">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.shared.ui.Popups.components.ListBox">
-      <metrics statements="5" coveredstatements="4" conditionals="7" coveredconditionals="3" methods="3" coveredmethods="2"/>
-      <file name="ListBox.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Popups/components/ListBox/ListBox.tsx">
-        <metrics statements="5" coveredstatements="4" conditionals="7" coveredconditionals="3" methods="3" coveredmethods="2"/>
-        <line num="30" count="23" type="stmt"/>
-        <line num="32" count="22" type="stmt"/>
-        <line num="34" count="22" type="stmt"/>
-        <line num="49" count="88" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.shared.ui.Popups.components.Popover">
-      <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="Popover.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Popups/components/Popover/Popover.tsx">
-        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.shared.ui.Popups.styles">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="consts.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Popups/styles/consts.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="7" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.shared.ui.Select">
-      <metrics statements="10" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="Select.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Select/Select.tsx">
-        <metrics statements="10" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-      </file>
-      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Select/index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+    <package name="src.shared.ui.Portal">
+      <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Portal.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Portal/Portal.tsx">
+        <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.ui.Skeleton">
       <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="Skeleton.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Skeleton/Skeleton.tsx">
         <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="12" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
@@ -1197,104 +1193,117 @@
       </file>
     </package>
     <package name="src.shared.ui.Stack.Flex">
-      <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <file name="Flex.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Stack/Flex/Flex.tsx">
-        <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="10" count="10" type="stmt"/>
-        <line num="17" count="10" type="stmt"/>
-        <line num="23" count="10" type="stmt"/>
-        <line num="28" count="10" type="stmt"/>
-        <line num="47" count="10" type="stmt"/>
-        <line num="50" count="133" type="stmt"/>
-        <line num="52" count="132" type="stmt"/>
-        <line num="60" count="132" type="stmt"/>
-        <line num="64" count="132" type="stmt"/>
+        <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.ui.Stack.HStack">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="HStack.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Stack/HStack/HStack.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="10" type="stmt"/>
-        <line num="6" count="76" type="stmt"/>
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.ui.Stack.VStack">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="VStack.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Stack/VStack/VStack.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="10" type="stmt"/>
-        <line num="6" count="58" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.shared.ui.Tabs">
-      <metrics statements="7" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="Tabs.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Tabs/Tabs.tsx">
-        <metrics statements="7" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
+    <package name="src.shared.ui.StarRating">
+      <metrics statements="18" coveredstatements="10" conditionals="10" coveredconditionals="1" methods="7" coveredmethods="4"/>
+      <file name="StarRating.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/StarRating/StarRating.tsx">
+        <metrics statements="18" coveredstatements="10" conditionals="10" coveredconditionals="1" methods="7" coveredmethods="4"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
       </file>
-      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Tabs/index.ts">
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/StarRating/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.shared.ui.Text">
-      <metrics statements="6" coveredstatements="6" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <metrics statements="6" coveredstatements="6" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
       <file name="Text.tsx" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Text/Text.tsx">
-        <metrics statements="6" coveredstatements="6" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
-        <line num="36" count="3" type="stmt"/>
-        <line num="42" count="3" type="stmt"/>
-        <line num="51" count="6" type="stmt"/>
-        <line num="53" count="6" type="stmt"/>
-        <line num="55" count="6" type="stmt"/>
-        <line num="61" count="6" type="stmt"/>
+        <metrics statements="6" coveredstatements="6" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/shared/ui/Text/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.widgets.Sidebar.model.selectors">
-      <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="getSidebarItems.ts" path="/Users/vadin/Desktop/course/production-project/src/widgets/Sidebar/model/selectors/getSidebarItems.ts">
-        <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="23" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
+    <package name="src.widgets.Page">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/widgets/Page/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.widgets.Sidebar.ui.Sidebar">
-      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
-      <file name="Sidebar.tsx" path="/Users/vadin/Desktop/course/production-project/src/widgets/Sidebar/ui/Sidebar/Sidebar.tsx">
-        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
+    <package name="src.widgets.Page.ui">
+      <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
+      <file name="Page.tsx" path="/Users/vadin/Desktop/course/production-project/src/widgets/Page/ui/Page.tsx">
+        <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
         <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
         <line num="26" count="3" type="stmt"/>
-        <line num="27" count="6" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="src.widgets.Sidebar.ui.SidebarItem">
-      <metrics statements="7" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="SidebarItem.tsx" path="/Users/vadin/Desktop/course/production-project/src/widgets/Sidebar/ui/SidebarItem/SidebarItem.tsx">
-        <metrics statements="7" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-        <line num="22" count="6" type="cond" truecount="2" falsecount="2"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
+    <package name="src.widgets.PageLoader">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/vadin/Desktop/course/production-project/src/widgets/PageLoader/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.widgets.PageLoader.ui">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="PageLoader.tsx" path="/Users/vadin/Desktop/course/production-project/src/widgets/PageLoader/ui/PageLoader.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
       </file>
     </package>
   </project>

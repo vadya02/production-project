@@ -5,14 +5,12 @@ import cls from './NotFoundPage.module.scss';
 interface NotFoundPageProps {
     className?: string;
 }
-const NotFoundPage = (props: NotFoundPageProps) => {
-    const { className } = props;
+
+export const NotFoundPage = ({ className }: NotFoundPageProps) => {
     const { t } = useTranslation();
     return (
-        <div className={classNames(cls.NotFoundPage, {}, [className])}>
-            {t('Page not found')}
+        <div data-testid="NotFoundPage" className={classNames(cls.NotFoundPage, {}, [className])}>
+            {t('Страница не найдена')}
         </div>
     );
 };
-
-export default NotFoundPage;

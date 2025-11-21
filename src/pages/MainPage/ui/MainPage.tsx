@@ -12,7 +12,7 @@ export default function MainPage() {
     };
 
     return (
-        <Page>
+        <Page data-testid="MainPage">
             {t('Главная страница')}
             <RatingCard title="555" feedbackTitle="555" hasFeedback />
         </Page>
