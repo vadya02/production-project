@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/shared/ui/Button';
 import { useCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
-import { counterActions, useCounterActions } from '../model/slice/counterSlice';
+import { useCounterActions } from '../model/slice/counterSlice';
 
 export const Counter = () => {
     const counterValue = useCounterValue();

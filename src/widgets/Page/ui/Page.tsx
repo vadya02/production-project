@@ -1,4 +1,6 @@
-import { memo, MutableRefObject, ReactNode, UIEvent, useRef } from 'react';
+import {
+    memo, MutableRefObject, ReactNode, UIEvent, useRef,
+} from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { StateSchema } from '@/app/providers/StoreProvider';
@@ -42,7 +44,7 @@ export const Page = memo((props: PageProps) => {
             uiActions.setScrollPosition({
                 position: e.currentTarget.scrollTop,
                 path: pathname,
-            })
+            }),
         );
     }, 500);
 

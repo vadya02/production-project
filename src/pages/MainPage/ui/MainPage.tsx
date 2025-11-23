@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page';
 import { RatingCard } from '@/entities/Rating';
+import { Counter } from '@/entities/Counter';
 
 export default function MainPage() {
     const { t } = useTranslation();
@@ -15,6 +16,7 @@ export default function MainPage() {
         <Page data-testid="MainPage">
             {t('Главная страница')}
             <RatingCard title="555" feedbackTitle="555" hasFeedback />
+            <Counter />
         </Page>
     );
 }

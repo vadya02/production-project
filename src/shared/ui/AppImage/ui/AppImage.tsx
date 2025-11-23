@@ -1,4 +1,6 @@
-import { ImgHTMLAttributes, ReactElement, useLayoutEffect, useState } from 'react';
+import {
+    ImgHTMLAttributes, ReactElement, useLayoutEffect, useState,
+} from 'react';
 
 interface AppImageProps extends ImgHTMLAttributes<HTMLImageElement> {
     className?: string;
@@ -7,7 +9,9 @@ interface AppImageProps extends ImgHTMLAttributes<HTMLImageElement> {
 }
 
 export const AppImage = (props: AppImageProps) => {
-    const { className, src, alt, fallback, errorFallback, ...ohterProps } = props;
+    const {
+        className, src, alt, fallback, errorFallback, ...ohterProps
+    } = props;
 
     const [isLoading, setIsLoading] = useState(true);
     const [hasError, setHasError] = useState(false);

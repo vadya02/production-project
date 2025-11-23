@@ -1,4 +1,4 @@
-import { HTMLAttributeAnchorTarget, memo, Suspense } from 'react';
+import { HTMLAttributeAnchorTarget, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import EyeIcon from '@/shared/assets/icons/eye-20-20.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -25,7 +25,9 @@ interface ArticleListItemProps {
 }
 
 export const ArticleListItem = memo((props: ArticleListItemProps) => {
-    const { className, article, view, target } = props;
+    const {
+        className, article, view, target,
+    } = props;
     const { t } = useTranslation();
 
     const types = <Text text={article.type.join(', ')} className={cls.types} />;
