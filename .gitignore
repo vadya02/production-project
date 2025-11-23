@@ -6,4 +6,4 @@ dist
 .loki/report.json
 .loki/report.html
 coverage
-/reports
+/reports/unit
