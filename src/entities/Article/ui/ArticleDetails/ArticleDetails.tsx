@@ -83,7 +83,7 @@ export const ArticleDetails = (props: ArticleDetailsProps) => {
                 <HStack justify="center" max className={cls.avatarWrapper}>
                     <Avatar size={200} src={article?.img} className={cls.avatar} />
                 </HStack>
-                <VStack gap="4" max>
+                <VStack gap="4" max data-testid='ArticleDetails.Info'>
                     <Text className={cls.title} title={article?.title} text={article?.subtitle} size={TextSize.L} />
                     <HStack gap="8" className={cls.articleInfo}>
                         <Icon className={cls.icon} Svg={EyeIcon} />

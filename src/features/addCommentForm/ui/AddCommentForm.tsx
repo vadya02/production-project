@@ -30,7 +30,7 @@ const AddCommentForm = (props: AddCommentFormProps) => {
         (value: string) => {
             dispatch(addCommentFormActions.setText(value));
         },
-        [dispatch],
+        [dispatch]
     );
 
     const onSendHandler = useCallback(() => {
@@ -40,9 +40,14 @@ const AddCommentForm = (props: AddCommentFormProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers}>
-            <HStack justify="between" max className={classNames(cls.AddCommentForm, {}, [className])}>
-                <Input className={cls.input} onChange={onCommentTextChange} />
-                <Button theme={ButtonTheme.OUTLINE} onClick={onSendHandler}>
+            <HStack
+                data-testid="AddCommentForm"
+                justify="between"
+                max
+                className={classNames(cls.AddCommentForm, {}, [className])}
+            >
+                <Input data-testid="AddCommentForm.Input" className={cls.input} onChange={onCommentTextChange} />
+                <Button data-testid="AddCommentForm.Button" theme={ButtonTheme.OUTLINE} onClick={onSendHandler}>
                     {t('Отправить')}
                 </Button>
             </HStack>
