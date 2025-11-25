@@ -16,7 +16,9 @@ interface EditableProfileCardHeaderProps {
     className?: string;
 }
 
-export const EditableProfileCardHeader = (props: EditableProfileCardHeaderProps) => {
+export const EditableProfileCardHeader = (
+    props: EditableProfileCardHeaderProps,
+) => {
     const { className } = props;
 
     const { t } = useTranslation('profile');
@@ -39,7 +41,11 @@ export const EditableProfileCardHeader = (props: EditableProfileCardHeaderProps)
     }, [dispatch]);
 
     return (
-        <HStack max justify="between" className={classNames('', {}, [className])}>
+        <HStack
+            max
+            justify="between"
+            className={classNames('', {}, [className])}
+        >
             <Text title={t('Профиль')} />
             {canEdit && (
                 <div>

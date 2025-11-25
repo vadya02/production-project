@@ -5,14 +5,14 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `EditableProfileCard` - компонент для редактирования профиля пользователя
 
-- types
+-   types
 
 `ProfileSchema` - схема состояния редактируемого профиля
 
-- reducers
+-   reducers
 
 `profileReducer` - редьюсер для управления состоянием профиля

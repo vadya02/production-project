@@ -1,5 +1,8 @@
 import {
-    AnyAction, EnhancedStore, Reducer, ReducersMapObject,
+    AnyAction,
+    EnhancedStore,
+    Reducer,
+    ReducersMapObject,
 } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
 import { ArticleDetailsSchema } from '@/entities/Article';

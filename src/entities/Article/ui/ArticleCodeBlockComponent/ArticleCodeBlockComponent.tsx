@@ -8,11 +8,17 @@ interface ArticleCodeBlockComponentProps {
     block: ArticleCodeBlock;
 }
 
-export const ArticleCodeBlockComponent = (props: ArticleCodeBlockComponentProps) => {
+export const ArticleCodeBlockComponent = (
+    props: ArticleCodeBlockComponentProps,
+) => {
     const { className, block } = props;
 
     return (
-        <div className={classNames(cls.ArticleCodeBlockComponent, {}, [className])}>
+        <div
+            className={classNames(cls.ArticleCodeBlockComponent, {}, [
+                className,
+            ])}
+        >
             <Code text={block.code} />
         </div>
     );

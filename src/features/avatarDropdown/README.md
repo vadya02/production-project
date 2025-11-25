@@ -5,6 +5,6 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `AvatarDropdown` - компонент с аватаром пользователя и выпадающим меню

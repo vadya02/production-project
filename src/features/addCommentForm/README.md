@@ -5,10 +5,10 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `AddCommentForm` - форма для добавления нового комментария
 
-- types
+-   types
 
 `AddCommentFormSchema` - схема состояния формы добавления комментария

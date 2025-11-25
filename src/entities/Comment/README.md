@@ -5,12 +5,12 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `CommentCard` - компонент для отображения отдельного комментария
 
 `CommentList` - компонент для отображения списка комментариев
 
-- types
+-   types
 
 `Comment` - тип, описывающий комментарий

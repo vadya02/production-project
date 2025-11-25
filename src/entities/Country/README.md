@@ -5,10 +5,10 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `CountrySelect` - компонент выбора страны
 
-- types
+-   types
 
 `Country` - перечисление доступных стран

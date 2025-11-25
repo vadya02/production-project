@@ -5,6 +5,6 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `LangSwitcher` - компонент для переключения языка приложения

@@ -2,12 +2,21 @@ import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import {
+    DynamicModuleLoader,
+    ReducersList,
+} from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { Button, ButtonTheme } from '@/shared/ui/Button';
 import { Input } from '@/shared/ui/Input';
 import { HStack } from '@/shared/ui/Stack';
-import { getAddCommentFormError, getAddCommentFormText } from '../model/selectors/addCommentFormSelectors';
-import { addCommentFormActions, addCommentFormReducer } from '../model/slices/addCommentFormSlice';
+import {
+    getAddCommentFormError,
+    getAddCommentFormText,
+} from '../model/selectors/addCommentFormSelectors';
+import {
+    addCommentFormActions,
+    addCommentFormReducer,
+} from '../model/slices/addCommentFormSlice';
 import cls from './AddCommentForm.module.scss';
 
 export interface AddCommentFormProps {
@@ -30,7 +39,7 @@ const AddCommentForm = (props: AddCommentFormProps) => {
         (value: string) => {
             dispatch(addCommentFormActions.setText(value));
         },
-        [dispatch]
+        [dispatch],
     );
 
     const onSendHandler = useCallback(() => {
@@ -46,8 +55,16 @@ const AddCommentForm = (props: AddCommentFormProps) => {
                 max
                 className={classNames(cls.AddCommentForm, {}, [className])}
             >
-                <Input data-testid="AddCommentForm.Input" className={cls.input} onChange={onCommentTextChange} />
-                <Button data-testid="AddCommentForm.Button" theme={ButtonTheme.OUTLINE} onClick={onSendHandler}>
+                <Input
+                    data-testid="AddCommentForm.Input"
+                    className={cls.input}
+                    onChange={onCommentTextChange}
+                />
+                <Button
+                    data-testid="AddCommentForm.Button"
+                    theme={ButtonTheme.OUTLINE}
+                    onClick={onSendHandler}
+                >
                     {t('Отправить')}
                 </Button>
             </HStack>

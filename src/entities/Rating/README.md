@@ -5,10 +5,10 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `RatingCard` - компонент для отображения и выставления рейтинга
 
-- types
+-   types
 
 `Rating` - тип, описывающий рейтинг с оценкой и отзывом

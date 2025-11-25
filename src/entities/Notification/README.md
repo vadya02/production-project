@@ -5,16 +5,16 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `NotificationItem` - компонент для отображения отдельного уведомления
 
 `NotificationList` - компонент для отображения списка уведомлений
 
-- types
+-   types
 
 `Notification` - тип, описывающий уведомление
 
-- hooks
+-   hooks
 
 `useNotifications` - хук для работы с уведомлениями

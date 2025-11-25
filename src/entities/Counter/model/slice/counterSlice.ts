@@ -24,4 +24,8 @@ export const counterSlice = buildSlice({
 });
 
 // Export the generated action creators for use in components
-export const { actions: counterActions, reducer: counterReducer, useActions: useCounterActions } = counterSlice;
+export const {
+    actions: counterActions,
+    reducer: counterReducer,
+    useActions: useCounterActions,
+} = counterSlice;

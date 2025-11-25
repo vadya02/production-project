@@ -5,6 +5,6 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `NotificationButton` - кнопка для открытия списка уведомлений

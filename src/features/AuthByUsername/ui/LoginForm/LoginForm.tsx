@@ -81,7 +81,12 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
                 >
                     {t('Войти')}
                 </Button>
-                {error && <Text text={i18n.t('Вы ввели неправильный пароль')} theme={TextTheme.ERROR} />}
+                {error && (
+                    <Text
+                        text={i18n.t('Вы ввели неправильный пароль')}
+                        theme={TextTheme.ERROR}
+                    />
+                )}
             </div>
         </DynamicModuleLoader>
     );

@@ -5,10 +5,10 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `CurrencySelect` - компонент выбора валюты
 
-- types
+-   types
 
 `Currency` - перечисление доступных валют

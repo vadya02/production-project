@@ -5,6 +5,6 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `ArticleRating` - компонент для выставления рейтинга статье

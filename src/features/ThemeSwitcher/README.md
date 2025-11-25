@@ -5,6 +5,6 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `ThemeSwitcher` - компонент для переключения темы приложения

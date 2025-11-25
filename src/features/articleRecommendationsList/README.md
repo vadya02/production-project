@@ -5,6 +5,6 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `ArticleRecommendationsList` - компонент для отображения списка рекомендуемых статей

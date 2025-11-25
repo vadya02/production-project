@@ -5,14 +5,14 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `Counter` - компонент счетчика с кнопками увеличения и уменьшения
 
-- types
+-   types
 
 `CounterSchema` - схема состояния счетчика
 
-- reducers
+-   reducers
 
 `counterReducer` - редьюсер для управления состоянием счетчика

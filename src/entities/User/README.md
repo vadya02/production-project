@@ -5,15 +5,15 @@
 
 #### Public api
 
-- Components
+-   Components
 
-- types
+-   types
 
 `User` - тип, описывающий пользователя
 
 `UserSchema` - схема состояния пользователя
 
-- selectors
+-   selectors
 
 `getUserAuthData` - селектор для получения данных авторизованного пользователя
 
@@ -25,14 +25,14 @@
 
 `isUserManager` - селектор для проверки прав менеджера
 
-- actions
+-   actions
 
 `userActions` - действия для управления состоянием пользователя
 
-- reducers
+-   reducers
 
 `userReducers` - редьюсеры для управления состоянием пользователя
 
-- consts
+-   consts
 
 `UserRole` - перечисление ролей пользователя

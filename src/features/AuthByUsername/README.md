@@ -5,14 +5,14 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `LoginModal` - модальное окно для авторизации пользователя
 
-- types
+-   types
 
 `LoginSchema` - схема состояния формы авторизации
 
-- reducers
+-   reducers
 
 `loginReducer` - редьюсер для управления состоянием авторизации

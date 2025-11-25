@@ -5,10 +5,10 @@
 
 #### Public api
 
-- Components
+-   Components
 
 `ProfileCard` - компонент для отображения карточки профиля пользователя
 
-- types
+-   types
 
 `Profile` - тип, описывающий профиль пользователя

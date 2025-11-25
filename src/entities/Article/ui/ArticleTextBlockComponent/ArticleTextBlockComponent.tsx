@@ -8,14 +8,24 @@ interface ArticleTextBlockComponentProps {
     block: ArticleTextBlock;
 }
 
-export const ArticleTextBlockComponent = (props: ArticleTextBlockComponentProps) => {
+export const ArticleTextBlockComponent = (
+    props: ArticleTextBlockComponentProps,
+) => {
     const { className, block } = props;
 
     return (
-        <div className={classNames(cls.ArticleTextBlockComponent, {}, [className])}>
+        <div
+            className={classNames(cls.ArticleTextBlockComponent, {}, [
+                className,
+            ])}
+        >
             {block.title && <Text title={block.title} className={cls.title} />}
             {block.paragraphs.map((paragraph, index) => (
-                <Text text={paragraph} key={paragraph} className={cls.paragraph} />
+                <Text
+                    text={paragraph}
+                    key={paragraph}
+                    className={cls.paragraph}
+                />
             ))}
         </div>
     );

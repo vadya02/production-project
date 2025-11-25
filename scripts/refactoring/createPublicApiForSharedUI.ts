@@ -38,7 +38,9 @@ componentsDirs?.forEach((directory) => {
     if (!indexFile) {
         // создаем код, наполняющий index.ts
         const sourceCode = `export * from './${directory.getBaseName()}';`;
-        const file = directory.createSourceFile(indexFilePath, sourceCode, { overwrite: true });
+        const file = directory.createSourceFile(indexFilePath, sourceCode, {
+            overwrite: true,
+        });
 
         file.save();
     }
