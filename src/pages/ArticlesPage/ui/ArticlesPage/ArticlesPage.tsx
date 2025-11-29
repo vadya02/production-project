@@ -16,6 +16,7 @@ import { articlesPageReducer } from '../../model/slices/articlesPageSlice';
 import { ArticlesInfiniteList } from '../ArticlesInfiniteList/ArticlesInfiniteList';
 import ArticlesPageFilters from '../ArticlesPageFilters/ArticlesPageFilters';
 import cls from './ArticlesPage.module.scss';
+import { useArticleItemById } from '../../model/selectors/articlesPageSelectors';
 
 interface ArticlesPageProps {
     className?: string;
@@ -30,6 +31,8 @@ const ArticlesPage = (props: ArticlesPageProps) => {
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
     const [searchParams] = useSearchParams();
+    const articleById = useArticleItemById('1')
+    console.log({articleById})
 
     const onLoadNextPart = useCallback(() => {
         dispatch(fetchNextArticlesPage());
