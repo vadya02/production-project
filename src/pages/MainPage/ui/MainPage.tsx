@@ -15,6 +15,7 @@ export default function MainPage() {
     return (
         <Page data-testid="MainPage">
             {t('Главная страница')}
+            11111
             <RatingCard title="555" feedbackTitle="555" hasFeedback />
             <Counter />
         </Page>
