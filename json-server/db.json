@@ -739,6 +739,12 @@
       "userId": "1",
       "text": "asfasf",
       "id": "SygCNYE"
+    },
+    {
+      "articleId": "5",
+      "userId": "4",
+      "text": "good job",
+      "id": "okAEZaD"
     }
   ],
   "users": [
@@ -886,6 +892,13 @@
       "rate": 2,
       "feedback": "asdasdasd",
       "id": "xbwnNBF"
+    },
+    {
+      "userId": "4",
+      "articleId": "5",
+      "rate": 5,
+      "feedback": "good",
+      "id": "QT_7bzO"
     }
   ],
   "profile-ratings": [
