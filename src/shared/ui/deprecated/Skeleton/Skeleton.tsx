@@ -1,20 +1,20 @@
-import { CSSProperties } from 'react';
+import { CSSProperties, memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Skeleton.module.scss';
 
 interface SkeletonProps {
     className?: string;
-    width?: string | number;
     height?: string | number;
+    width?: string | number;
     border?: string;
 }
 
 /**
-* Устарел, используем новые компоненты из папки redesigned
-* @deprecated
-*/
-export const Skeleton = (props: SkeletonProps) => {
-    const { className, border, height, width } = props;
+ * Устарел, используем новые компоненты из папки redesigned
+ * @deprecated
+ */
+export const Skeleton = memo((props: SkeletonProps) => {
+    const { className, height, width, border } = props;
 
     const styles: CSSProperties = {
         width,
@@ -28,4 +28,4 @@ export const Skeleton = (props: SkeletonProps) => {
             style={styles}
         />
     );
-};
+});
