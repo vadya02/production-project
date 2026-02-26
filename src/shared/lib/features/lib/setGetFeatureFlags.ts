@@ -13,3 +13,7 @@ export function getFeatureFlags(flag: keyof FeatureFlags) {
     if (featureFlags)
         return featureFlags[flag];
 }
+
+export function getAllFeatureFlags() {
+    return featureFlags;
+}
